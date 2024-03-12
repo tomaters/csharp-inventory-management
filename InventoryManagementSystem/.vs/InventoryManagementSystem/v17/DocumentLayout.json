@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\csharp\\projects\\InventoryManagement\\InventoryManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{18A28F72-A2F2-44A7-851F-BDB44F63CCA1}|InventoryManagementSystem\\InventoryManagementSystem.csproj|c:\\csharp\\projects\\inventorymanagement\\inventorymanagementsystem\\inventorymanagementsystem\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{18A28F72-A2F2-44A7-851F-BDB44F63CCA1}|InventoryManagementSystem\\InventoryManagementSystem.csproj|solutionrelative:inventorymanagementsystem\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{18A28F72-A2F2-44A7-851F-BDB44F63CCA1}|InventoryManagementSystem\\InventoryManagementSystem.csproj|C:\\csharp\\projects\\InventoryManagement\\InventoryManagementSystem\\inventorymanagementsystem\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18A28F72-A2F2-44A7-851F-BDB44F63CCA1}|InventoryManagementSystem\\InventoryManagementSystem.csproj|solutionrelative:inventorymanagementsystem\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18A28F72-A2F2-44A7-851F-BDB44F63CCA1}|InventoryManagementSystem\\InventoryManagementSystem.csproj|C:\\csharp\\projects\\InventoryManagement\\InventoryManagementSystem\\inventorymanagementsystem\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18A28F72-A2F2-44A7-851F-BDB44F63CCA1}|InventoryManagementSystem\\InventoryManagementSystem.csproj|solutionrelative:inventorymanagementsystem\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18A28F72-A2F2-44A7-851F-BDB44F63CCA1}|InventoryManagementSystem\\InventoryManagementSystem.csproj|c:\\csharp\\projects\\inventorymanagement\\inventorymanagementsystem\\inventorymanagementsystem\\userinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{18A28F72-A2F2-44A7-851F-BDB44F63CCA1}|InventoryManagementSystem\\InventoryManagementSystem.csproj|solutionrelative:inventorymanagementsystem\\userinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18A28F72-A2F2-44A7-851F-BDB44F63CCA1}|InventoryManagementSystem\\InventoryManagementSystem.csproj|C:\\csharp\\projects\\InventoryManagement\\InventoryManagementSystem\\inventorymanagementsystem\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{18A28F72-A2F2-44A7-851F-BDB44F63CCA1}|InventoryManagementSystem\\InventoryManagementSystem.csproj|solutionrelative:inventorymanagementsystem\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18A28F72-A2F2-44A7-851F-BDB44F63CCA1}|InventoryManagementSystem\\InventoryManagementSystem.csproj|C:\\csharp\\projects\\InventoryManagement\\InventoryManagementSystem\\inventorymanagementsystem\\userinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18A28F72-A2F2-44A7-851F-BDB44F63CCA1}|InventoryManagementSystem\\InventoryManagementSystem.csproj|solutionrelative:inventorymanagementsystem\\userinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18A28F72-A2F2-44A7-851F-BDB44F63CCA1}|InventoryManagementSystem\\InventoryManagementSystem.csproj|C:\\csharp\\projects\\InventoryManagement\\InventoryManagementSystem\\inventorymanagementsystem\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{18A28F72-A2F2-44A7-851F-BDB44F63CCA1}|InventoryManagementSystem\\InventoryManagementSystem.csproj|solutionrelative:inventorymanagementsystem\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{18A28F72-A2F2-44A7-851F-BDB44F63CCA1}|InventoryManagementSystem\\InventoryManagementSystem.csproj|C:\\csharp\\projects\\InventoryManagement\\InventoryManagementSystem\\inventorymanagementsystem\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -19,16 +31,12 @@
       "RelativeMoniker": "D:0:0:{18A28F72-A2F2-44A7-851F-BDB44F63CCA1}|InventoryManagementSystem\\InventoryManagementSystem.csproj|solutionrelative:inventorymanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18A28F72-A2F2-44A7-851F-BDB44F63CCA1}|InventoryManagementSystem\\InventoryManagementSystem.csproj|C:\\csharp\\projects\\InventoryManagement\\InventoryManagementSystem\\inventorymanagementsystem\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{18A28F72-A2F2-44A7-851F-BDB44F63CCA1}|InventoryManagementSystem\\InventoryManagementSystem.csproj|solutionrelative:inventorymanagementsystem\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{18A28F72-A2F2-44A7-851F-BDB44F63CCA1}|InventoryManagementSystem\\InventoryManagementSystem.csproj|C:\\csharp\\projects\\InventoryManagement\\InventoryManagementSystem\\inventorymanagementsystem\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18A28F72-A2F2-44A7-851F-BDB44F63CCA1}|InventoryManagementSystem\\InventoryManagementSystem.csproj|solutionrelative:inventorymanagementsystem\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{18A28F72-A2F2-44A7-851F-BDB44F63CCA1}|InventoryManagementSystem\\InventoryManagementSystem.csproj|C:\\csharp\\projects\\InventoryManagement\\InventoryManagementSystem\\inventorymanagementsystem\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{18A28F72-A2F2-44A7-851F-BDB44F63CCA1}|InventoryManagementSystem\\InventoryManagementSystem.csproj|solutionrelative:inventorymanagementsystem\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18A28F72-A2F2-44A7-851F-BDB44F63CCA1}|InventoryManagementSystem\\InventoryManagementSystem.csproj|C:\\csharp\\projects\\InventoryManagement\\InventoryManagementSystem\\inventorymanagementsystem\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18A28F72-A2F2-44A7-851F-BDB44F63CCA1}|InventoryManagementSystem\\InventoryManagementSystem.csproj|solutionrelative:inventorymanagementsystem\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,40 +46,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "UserInfo.cs [Design]",
+              "DocumentMoniker": "C:\\csharp\\projects\\InventoryManagement\\InventoryManagementSystem\\InventoryManagementSystem\\UserInfo.cs",
+              "RelativeDocumentMoniker": "InventoryManagementSystem\\UserInfo.cs",
+              "ToolTip": "C:\\csharp\\projects\\InventoryManagement\\InventoryManagementSystem\\InventoryManagementSystem\\UserInfo.cs [Design]",
+              "RelativeToolTip": "InventoryManagementSystem\\UserInfo.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T09:51:21.9Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "UserForm.cs",
               "DocumentMoniker": "C:\\csharp\\projects\\InventoryManagement\\InventoryManagementSystem\\InventoryManagementSystem\\UserForm.cs",
               "RelativeDocumentMoniker": "InventoryManagementSystem\\UserForm.cs",
               "ToolTip": "C:\\csharp\\projects\\InventoryManagement\\InventoryManagementSystem\\InventoryManagementSystem\\UserForm.cs",
               "RelativeToolTip": "InventoryManagementSystem\\UserForm.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAApwCkAAAAAAAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAIA4wCkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T08:57:22.721Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-06T08:57:22.721Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "UserForm.cs [Design]",
               "DocumentMoniker": "C:\\csharp\\projects\\InventoryManagement\\InventoryManagementSystem\\InventoryManagementSystem\\UserForm.cs",
               "RelativeDocumentMoniker": "InventoryManagementSystem\\UserForm.cs",
               "ToolTip": "C:\\csharp\\projects\\InventoryManagement\\InventoryManagementSystem\\InventoryManagementSystem\\UserForm.cs [Design]",
               "RelativeToolTip": "InventoryManagementSystem\\UserForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T08:54:15.107Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-03-06T08:54:15.107Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\csharp\\projects\\InventoryManagement\\InventoryManagementSystem\\InventoryManagementSystem\\MainForm.cs",
               "RelativeDocumentMoniker": "InventoryManagementSystem\\MainForm.cs",
@@ -83,7 +97,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\csharp\\projects\\InventoryManagement\\InventoryManagementSystem\\InventoryManagementSystem\\MainForm.cs",
               "RelativeDocumentMoniker": "InventoryManagementSystem\\MainForm.cs",
@@ -95,6 +109,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "UserInfo.cs",
+              "DocumentMoniker": "C:\\csharp\\projects\\InventoryManagement\\InventoryManagementSystem\\InventoryManagementSystem\\UserInfo.cs",
+              "RelativeDocumentMoniker": "InventoryManagementSystem\\UserInfo.cs",
+              "ToolTip": "C:\\csharp\\projects\\InventoryManagement\\InventoryManagementSystem\\InventoryManagementSystem\\UserInfo.cs",
+              "RelativeToolTip": "InventoryManagementSystem\\UserInfo.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAApwB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T09:52:16.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\csharp\\projects\\InventoryManagement\\InventoryManagementSystem\\InventoryManagementSystem\\Program.cs",
               "RelativeDocumentMoniker": "InventoryManagementSystem\\Program.cs",
@@ -106,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "LoginForm.cs",
               "DocumentMoniker": "C:\\csharp\\projects\\InventoryManagement\\InventoryManagementSystem\\InventoryManagementSystem\\LoginForm.cs",
               "RelativeDocumentMoniker": "InventoryManagementSystem\\LoginForm.cs",
@@ -114,18 +141,20 @@
               "RelativeToolTip": "InventoryManagementSystem\\LoginForm.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAIAwwBsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T07:05:43.431Z"
+              "WhenOpened": "2024-03-06T07:05:43.431Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "C:\\csharp\\projects\\InventoryManagement\\InventoryManagementSystem\\InventoryManagementSystem\\LoginForm.cs",
               "RelativeDocumentMoniker": "InventoryManagementSystem\\LoginForm.cs",
               "ToolTip": "C:\\csharp\\projects\\InventoryManagement\\InventoryManagementSystem\\InventoryManagementSystem\\LoginForm.cs [Design]",
               "RelativeToolTip": "InventoryManagementSystem\\LoginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T07:02:39.691Z"
+              "WhenOpened": "2024-03-06T07:02:39.691Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

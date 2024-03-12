@@ -12,6 +12,26 @@ namespace InventoryManagementSystem
 {
     public partial class MainForm : Form
     {
+        // for subform (or childform) form in mainform
+        private Form activeForm = null;
+        public void openChildForm(Form childForm)
+        {
+            // check whether there is an existing form. if there is, close it
+            if (activeForm != null)
+                activeForm.Close();
+            
+            activeForm = childForm;
+
+            // indicate that the form is not a top-level control; treated as nested
+            childForm.TopLevel = false;
+            
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelMain.Controls.Add(childForm);
+            panelMain.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
         public MainForm()
         {
             InitializeComponent();
@@ -30,6 +50,11 @@ namespace InventoryManagementSystem
         private void panelMain_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void usersButton_Click(object sender, EventArgs e)
+        {
+            openChildForm(new UsersForm());
         }
     }
 }

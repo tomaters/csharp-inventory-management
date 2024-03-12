@@ -30,24 +30,24 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.exitButton = new System.Windows.Forms.PictureBox();
             this.folderIcon = new System.Windows.Forms.PictureBox();
             this.title = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.usernameTextbox = new System.Windows.Forms.TextBox();
+            this.passwordTextbox = new System.Windows.Forms.TextBox();
+            this.usernameLabel = new System.Windows.Forms.Label();
+            this.passwordLabel = new System.Windows.Forms.Label();
             this.loginButton = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.rememberMeCheckbox = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.folderIcon)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.PowderBlue;
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.exitButton);
             this.panel1.Controls.Add(this.folderIcon);
             this.panel1.Controls.Add(this.title);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -57,15 +57,15 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // pictureBox1
+            // exitButton
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(324, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(23, 20);
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
+            this.exitButton.Image = ((System.Drawing.Image)(resources.GetObject("exitButton.Image")));
+            this.exitButton.Location = new System.Drawing.Point(324, 9);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(23, 20);
+            this.exitButton.TabIndex = 7;
+            this.exitButton.TabStop = false;
+            this.exitButton.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
             // folderIcon
             // 
@@ -93,39 +93,39 @@
             this.title.Text = "Inventory Management\r\n";
             this.title.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // usernameTextbox
             // 
-            this.textBox1.Location = new System.Drawing.Point(32, 128);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(284, 22);
-            this.textBox1.TabIndex = 1;
+            this.usernameTextbox.Location = new System.Drawing.Point(32, 128);
+            this.usernameTextbox.Name = "usernameTextbox";
+            this.usernameTextbox.Size = new System.Drawing.Size(284, 22);
+            this.usernameTextbox.TabIndex = 1;
             // 
-            // textBox2
+            // passwordTextbox
             // 
-            this.textBox2.Location = new System.Drawing.Point(32, 198);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(284, 22);
-            this.textBox2.TabIndex = 2;
+            this.passwordTextbox.Location = new System.Drawing.Point(32, 198);
+            this.passwordTextbox.Name = "passwordTextbox";
+            this.passwordTextbox.Size = new System.Drawing.Size(284, 22);
+            this.passwordTextbox.TabIndex = 2;
             // 
-            // label2
+            // usernameLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Sitka Banner", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(28, 101);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 24);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Username";
+            this.usernameLabel.AutoSize = true;
+            this.usernameLabel.Font = new System.Drawing.Font("Sitka Banner", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameLabel.Location = new System.Drawing.Point(28, 101);
+            this.usernameLabel.Name = "usernameLabel";
+            this.usernameLabel.Size = new System.Drawing.Size(75, 24);
+            this.usernameLabel.TabIndex = 3;
+            this.usernameLabel.Text = "Username";
             // 
-            // label3
+            // passwordLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Sitka Banner", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(28, 171);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 24);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Password";
+            this.passwordLabel.AutoSize = true;
+            this.passwordLabel.Font = new System.Drawing.Font("Sitka Banner", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordLabel.Location = new System.Drawing.Point(28, 171);
+            this.passwordLabel.Name = "passwordLabel";
+            this.passwordLabel.Size = new System.Drawing.Size(71, 24);
+            this.passwordLabel.TabIndex = 4;
+            this.passwordLabel.Text = "Password";
             // 
             // loginButton
             // 
@@ -140,28 +140,28 @@
             this.loginButton.UseVisualStyleBackColor = false;
             this.loginButton.Click += new System.EventHandler(this.button1_Click);
             // 
-            // checkBox1
+            // rememberMeCheckbox
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(197, 233);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(119, 20);
-            this.checkBox1.TabIndex = 6;
-            this.checkBox1.Text = "Remember me";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.rememberMeCheckbox.AutoSize = true;
+            this.rememberMeCheckbox.Location = new System.Drawing.Point(197, 233);
+            this.rememberMeCheckbox.Name = "rememberMeCheckbox";
+            this.rememberMeCheckbox.Size = new System.Drawing.Size(119, 20);
+            this.rememberMeCheckbox.TabIndex = 6;
+            this.rememberMeCheckbox.Text = "Remember me";
+            this.rememberMeCheckbox.UseVisualStyleBackColor = true;
+            this.rememberMeCheckbox.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(349, 535);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.rememberMeCheckbox);
             this.Controls.Add(this.loginButton);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.passwordLabel);
+            this.Controls.Add(this.usernameLabel);
+            this.Controls.Add(this.passwordTextbox);
+            this.Controls.Add(this.usernameTextbox);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginForm";
@@ -170,7 +170,7 @@
             this.Load += new System.EventHandler(this.LoginForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exitButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.folderIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -180,15 +180,15 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox usernameTextbox;
         private System.Windows.Forms.Label title;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox passwordTextbox;
+        private System.Windows.Forms.Label usernameLabel;
+        private System.Windows.Forms.Label passwordLabel;
         private System.Windows.Forms.Button loginButton;
         private System.Windows.Forms.PictureBox folderIcon;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.CheckBox rememberMeCheckbox;
+        private System.Windows.Forms.PictureBox exitButton;
     }
 }
 

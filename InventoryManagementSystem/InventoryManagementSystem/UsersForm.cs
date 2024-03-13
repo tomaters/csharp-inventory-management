@@ -19,10 +19,10 @@ namespace InventoryManagementSystem
         public UsersForm()
         {
             InitializeComponent();
-            LoadUser();
+            LoadUsers();
         }
 
-        public void LoadUser()
+        public void LoadUsers()
         {
             dataGridViewUser.Rows.Clear();
             command = new SqlCommand("SELECT * FROM users", connection);
@@ -98,7 +98,7 @@ namespace InventoryManagementSystem
                     MessageBox.Show("Record successfully deleted");
                 }
             }
-            LoadUser();
+            LoadUsers();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -117,7 +117,7 @@ namespace InventoryManagementSystem
             userInfoForm.saveUserInfoButton.Enabled = true;
             userInfoForm.updateUserInfoButton.Enabled = false;
             userInfoForm.ShowDialog();
-            LoadUser();
+            LoadUsers();
         }
 
         private void panelFooter_Paint(object sender, PaintEventArgs e)

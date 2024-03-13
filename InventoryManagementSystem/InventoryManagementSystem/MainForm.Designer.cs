@@ -139,6 +139,7 @@
             this.customersButton.Size = new System.Drawing.Size(97, 24);
             this.customersButton.TabIndex = 1;
             this.customersButton.Text = "CUSTOMERS";
+            this.customersButton.Click += new System.EventHandler(this.customersButton_Click);
             // 
             // ordersButton
             // 

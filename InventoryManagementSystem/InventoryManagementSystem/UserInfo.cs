@@ -78,7 +78,6 @@ namespace InventoryManagementSystem
             {
                 MessageBox.Show(ex.Message);
             }
-
         }
 
         private void clearUserInfoButton_Click(object sender, EventArgs e)

@@ -47,6 +47,8 @@
             this.fullnameLabel = new System.Windows.Forms.Label();
             this.fullnameTextbox = new System.Windows.Forms.TextBox();
             this.updateUserInfoButton = new System.Windows.Forms.Button();
+            this.repasswordLabel = new System.Windows.Forms.Label();
+            this.repasswordTextbox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.folderIcon)).BeginInit();
             this.panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
@@ -111,7 +113,7 @@
             // 
             // usernameTextbox
             // 
-            this.usernameTextbox.Location = new System.Drawing.Point(172, 128);
+            this.usernameTextbox.Location = new System.Drawing.Point(215, 101);
             this.usernameTextbox.Name = "usernameTextbox";
             this.usernameTextbox.Size = new System.Drawing.Size(543, 22);
             this.usernameTextbox.TabIndex = 2;
@@ -121,7 +123,7 @@
             // 
             this.usernameLabel.AutoSize = true;
             this.usernameLabel.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameLabel.Location = new System.Drawing.Point(67, 121);
+            this.usernameLabel.Location = new System.Drawing.Point(111, 94);
             this.usernameLabel.Name = "usernameLabel";
             this.usernameLabel.Size = new System.Drawing.Size(89, 29);
             this.usernameLabel.TabIndex = 1;
@@ -132,7 +134,7 @@
             // 
             this.passwordLabel.AutoSize = true;
             this.passwordLabel.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordLabel.Location = new System.Drawing.Point(65, 213);
+            this.passwordLabel.Location = new System.Drawing.Point(114, 181);
             this.passwordLabel.Name = "passwordLabel";
             this.passwordLabel.Size = new System.Drawing.Size(86, 29);
             this.passwordLabel.TabIndex = 5;
@@ -140,7 +142,7 @@
             // 
             // passwordTextbox
             // 
-            this.passwordTextbox.Location = new System.Drawing.Point(172, 218);
+            this.passwordTextbox.Location = new System.Drawing.Point(215, 186);
             this.passwordTextbox.Name = "passwordTextbox";
             this.passwordTextbox.Size = new System.Drawing.Size(543, 22);
             this.passwordTextbox.TabIndex = 6;
@@ -150,7 +152,7 @@
             // 
             this.emailLabel.AutoSize = true;
             this.emailLabel.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailLabel.Location = new System.Drawing.Point(66, 258);
+            this.emailLabel.Location = new System.Drawing.Point(142, 262);
             this.emailLabel.Name = "emailLabel";
             this.emailLabel.Size = new System.Drawing.Size(58, 29);
             this.emailLabel.TabIndex = 7;
@@ -158,7 +160,7 @@
             // 
             // emailTextbox
             // 
-            this.emailTextbox.Location = new System.Drawing.Point(172, 264);
+            this.emailTextbox.Location = new System.Drawing.Point(215, 268);
             this.emailTextbox.Name = "emailTextbox";
             this.emailTextbox.Size = new System.Drawing.Size(543, 22);
             this.emailTextbox.TabIndex = 8;
@@ -167,7 +169,7 @@
             // 
             this.phoneLabel.AutoSize = true;
             this.phoneLabel.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phoneLabel.Location = new System.Drawing.Point(67, 301);
+            this.phoneLabel.Location = new System.Drawing.Point(140, 301);
             this.phoneLabel.Name = "phoneLabel";
             this.phoneLabel.Size = new System.Drawing.Size(60, 29);
             this.phoneLabel.TabIndex = 9;
@@ -175,7 +177,7 @@
             // 
             // phoneTextbox
             // 
-            this.phoneTextbox.Location = new System.Drawing.Point(172, 308);
+            this.phoneTextbox.Location = new System.Drawing.Point(215, 308);
             this.phoneTextbox.Name = "phoneTextbox";
             this.phoneTextbox.Size = new System.Drawing.Size(543, 22);
             this.phoneTextbox.TabIndex = 10;
@@ -185,7 +187,7 @@
             this.saveUserInfoButton.BackColor = System.Drawing.Color.ForestGreen;
             this.saveUserInfoButton.Font = new System.Drawing.Font("Sitka Banner", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveUserInfoButton.ForeColor = System.Drawing.Color.White;
-            this.saveUserInfoButton.Location = new System.Drawing.Point(593, 348);
+            this.saveUserInfoButton.Location = new System.Drawing.Point(624, 348);
             this.saveUserInfoButton.Name = "saveUserInfoButton";
             this.saveUserInfoButton.Size = new System.Drawing.Size(122, 39);
             this.saveUserInfoButton.TabIndex = 12;
@@ -198,7 +200,7 @@
             this.clearUserInfoButton.BackColor = System.Drawing.Color.Crimson;
             this.clearUserInfoButton.Font = new System.Drawing.Font("Sitka Banner", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clearUserInfoButton.ForeColor = System.Drawing.Color.White;
-            this.clearUserInfoButton.Location = new System.Drawing.Point(337, 348);
+            this.clearUserInfoButton.Location = new System.Drawing.Point(368, 348);
             this.clearUserInfoButton.Name = "clearUserInfoButton";
             this.clearUserInfoButton.Size = new System.Drawing.Size(122, 39);
             this.clearUserInfoButton.TabIndex = 11;
@@ -210,7 +212,7 @@
             // 
             this.fullnameLabel.AutoSize = true;
             this.fullnameLabel.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fullnameLabel.Location = new System.Drawing.Point(66, 168);
+            this.fullnameLabel.Location = new System.Drawing.Point(110, 140);
             this.fullnameLabel.Name = "fullnameLabel";
             this.fullnameLabel.Size = new System.Drawing.Size(90, 29);
             this.fullnameLabel.TabIndex = 3;
@@ -218,7 +220,7 @@
             // 
             // fullnameTextbox
             // 
-            this.fullnameTextbox.Location = new System.Drawing.Point(172, 174);
+            this.fullnameTextbox.Location = new System.Drawing.Point(215, 147);
             this.fullnameTextbox.Name = "fullnameTextbox";
             this.fullnameTextbox.Size = new System.Drawing.Size(543, 22);
             this.fullnameTextbox.TabIndex = 4;
@@ -228,7 +230,7 @@
             this.updateUserInfoButton.BackColor = System.Drawing.Color.SteelBlue;
             this.updateUserInfoButton.Font = new System.Drawing.Font("Sitka Banner", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updateUserInfoButton.ForeColor = System.Drawing.Color.White;
-            this.updateUserInfoButton.Location = new System.Drawing.Point(465, 348);
+            this.updateUserInfoButton.Location = new System.Drawing.Point(496, 348);
             this.updateUserInfoButton.Name = "updateUserInfoButton";
             this.updateUserInfoButton.Size = new System.Drawing.Size(122, 39);
             this.updateUserInfoButton.TabIndex = 13;
@@ -236,11 +238,31 @@
             this.updateUserInfoButton.UseVisualStyleBackColor = false;
             this.updateUserInfoButton.Click += new System.EventHandler(this.updateUserInfoButton_Click);
             // 
+            // repasswordLabel
+            // 
+            this.repasswordLabel.AutoSize = true;
+            this.repasswordLabel.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.repasswordLabel.Location = new System.Drawing.Point(45, 224);
+            this.repasswordLabel.Name = "repasswordLabel";
+            this.repasswordLabel.Size = new System.Drawing.Size(155, 29);
+            this.repasswordLabel.TabIndex = 14;
+            this.repasswordLabel.Text = "Re-enter password";
+            this.repasswordLabel.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // repasswordTextbox
+            // 
+            this.repasswordTextbox.Location = new System.Drawing.Point(215, 230);
+            this.repasswordTextbox.Name = "repasswordTextbox";
+            this.repasswordTextbox.Size = new System.Drawing.Size(543, 22);
+            this.repasswordTextbox.TabIndex = 15;
+            // 
             // UserInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(816, 415);
+            this.Controls.Add(this.repasswordLabel);
+            this.Controls.Add(this.repasswordTextbox);
             this.Controls.Add(this.updateUserInfoButton);
             this.Controls.Add(this.fullnameTextbox);
             this.Controls.Add(this.fullnameLabel);
@@ -288,5 +310,7 @@
         public System.Windows.Forms.Button saveUserInfoButton;
         public System.Windows.Forms.Button clearUserInfoButton;
         public System.Windows.Forms.Button updateUserInfoButton;
+        private System.Windows.Forms.Label repasswordLabel;
+        public System.Windows.Forms.TextBox repasswordTextbox;
     }
 }

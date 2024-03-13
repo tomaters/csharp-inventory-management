@@ -50,6 +50,12 @@ namespace InventoryManagementSystem
         {
             try
             {
+                // re-password check
+                if(passwordTextbox.Text != repasswordTextbox.Text)
+                {
+                    MessageBox.Show("The passwords do not match. Please try again.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
                 // popup confirmation
                 if (MessageBox.Show("Are you sure you want to save this data?", "Saving", MessageBoxButtons.YesNo, MessageBoxIcon.Question)==DialogResult.Yes)
                 {
@@ -65,6 +71,7 @@ namespace InventoryManagementSystem
                     command.ExecuteNonQuery();
                     connection.Close();
                     MessageBox.Show("User data successfully saved");
+                    this.Close();
                 }
             }
             catch (Exception ex) 
@@ -77,6 +84,8 @@ namespace InventoryManagementSystem
         private void clearUserInfoButton_Click(object sender, EventArgs e)
         {
             Clear();
+            saveUserInfoButton.Enabled = true;
+            updateUserInfoButton.Enabled = false;
         }
 
         public void Clear()
@@ -85,6 +94,7 @@ namespace InventoryManagementSystem
             usernameTextbox.Clear();
             fullnameTextbox.Clear();
             passwordTextbox.Clear();
+            repasswordTextbox.Clear();
             emailTextbox.Clear();
             phoneTextbox.Clear();
         }
@@ -98,11 +108,16 @@ namespace InventoryManagementSystem
         {
             try
             {
+                if (passwordTextbox.Text != repasswordTextbox.Text)
+                {
+                    MessageBox.Show("The passwords do not match. Please try again.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
                 // popup confirmation
                 if (MessageBox.Show("Are you sure you want to update this data?", "Updating", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     // execute insert statement
-                    command = new SqlCommand("UPDATE users SET username=@username, fullname=@fullname, password=@password, email=@email, phone=@phone WHERE username LIKE '" + usernameTextbox.Text + '"', connection);
+                    command = new SqlCommand("UPDATE users SET username=@username, fullname=@fullname, password=@password, email=@email, phone=@phone WHERE username LIKE '" + usernameTextbox.Text + "'", connection);
                     command.Parameters.AddWithValue("@username", usernameTextbox.Text);
                     command.Parameters.AddWithValue("@fullname", fullnameTextbox.Text);
                     command.Parameters.AddWithValue("@password", passwordTextbox.Text);
@@ -120,6 +135,11 @@ namespace InventoryManagementSystem
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

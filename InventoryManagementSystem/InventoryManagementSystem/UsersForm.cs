@@ -36,7 +36,8 @@ namespace InventoryManagementSystem
                 while (sqlDataReader.Read())
                 {
                     count++;
-                    dataGridViewUser.Rows.Add(count, sqlDataReader[0].ToString(), sqlDataReader[1].ToString(), sqlDataReader[2].ToString(), sqlDataReader[3].ToString());
+                    // skip sqlDataReader[2]; don't display password
+                    dataGridViewUser.Rows.Add(count, sqlDataReader[0].ToString(), sqlDataReader[1].ToString(), sqlDataReader[3].ToString(), sqlDataReader[4].ToString());
                 }
             }
             catch (Exception ex)
@@ -74,9 +75,10 @@ namespace InventoryManagementSystem
                 // change info of username accordingly
                 userInfo.usernameTextbox.Text = dataGridViewUser.Rows[e.RowIndex].Cells[1].Value.ToString();
                 userInfo.fullnameTextbox.Text = dataGridViewUser.Rows[e.RowIndex].Cells[2].Value.ToString();
-                userInfo.passwordTextbox.Text = dataGridViewUser.Rows[e.RowIndex].Cells[3].Value.ToString();
-                userInfo.emailTextbox.Text = dataGridViewUser.Rows[e.RowIndex].Cells[4].Value.ToString();
-                userInfo.phoneTextbox.Text = dataGridViewUser.Rows[e.RowIndex].Cells[5].Value.ToString();
+                // password not shown
+                // userInfo.passwordTextbox.Text = dataGridViewUser.Rows[e.RowIndex].Cells[].Value.ToString();
+                userInfo.emailTextbox.Text = dataGridViewUser.Rows[e.RowIndex].Cells[3].Value.ToString();
+                userInfo.phoneTextbox.Text = dataGridViewUser.Rows[e.RowIndex].Cells[4].Value.ToString();
                 // enable necessary features
                 userInfo.saveUserInfoButton.Enabled = false;
                 userInfo.updateUserInfoButton.Enabled = true;
@@ -112,10 +114,10 @@ namespace InventoryManagementSystem
         private void button1_Click(object sender, EventArgs e)
         {
             UserInfo userInfoForm = new UserInfo();
-            // show the UserInfo form
-            userInfoForm.Show();
-            // hide the current form
-            this.Hide();
+            userInfoForm.saveUserInfoButton.Enabled = true;
+            userInfoForm.updateUserInfoButton.Enabled = false;
+            userInfoForm.ShowDialog();
+            LoadUser();
         }
 
         private void panelFooter_Paint(object sender, PaintEventArgs e)

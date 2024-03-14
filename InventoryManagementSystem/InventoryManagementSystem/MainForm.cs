@@ -41,17 +41,14 @@ namespace InventoryManagementSystem
         {
 
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void panelMain_Paint(object sender, PaintEventArgs e)
         {
 
         }
-
+       private void productsButton_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ProductsForm());
+        }
         private void usersButton_Click(object sender, EventArgs e)
         {
             openChildForm(new UsersForm());
@@ -60,6 +57,16 @@ namespace InventoryManagementSystem
         private void customersButton_Click(object sender, EventArgs e)
         {
             openChildForm(new CustomersForm());
+        }
+
+        private void categoriesButton_Click(object sender, EventArgs e)
+        {
+            openChildForm(new CategoriesForm());
+        }
+
+        private void ordersButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

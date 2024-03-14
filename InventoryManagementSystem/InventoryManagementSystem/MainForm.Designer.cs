@@ -32,13 +32,13 @@
             this.panelHeader = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.folderIcon = new System.Windows.Forms.PictureBox();
-            this.title = new System.Windows.Forms.Label();
+            this.inventoryManagementLabel = new System.Windows.Forms.Label();
             this.panelFooter = new System.Windows.Forms.Panel();
             this.panelMain = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.customersButton = new System.Windows.Forms.Label();
             this.ordersButton = new System.Windows.Forms.Label();
-            this.productButton = new System.Windows.Forms.Label();
+            this.productsButton = new System.Windows.Forms.Label();
             this.usersButton = new System.Windows.Forms.Label();
             this.categoriesButton = new System.Windows.Forms.Label();
             this.panelHeader.SuspendLayout();
@@ -53,11 +53,11 @@
             this.panelHeader.BackColor = System.Drawing.Color.PowderBlue;
             this.panelHeader.Controls.Add(this.pictureBox1);
             this.panelHeader.Controls.Add(this.folderIcon);
-            this.panelHeader.Controls.Add(this.title);
+            this.panelHeader.Controls.Add(this.inventoryManagementLabel);
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHeader.Location = new System.Drawing.Point(0, 0);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(979, 83);
+            this.panelHeader.Size = new System.Drawing.Size(1232, 83);
             this.panelHeader.TabIndex = 0;
             // 
             // pictureBox1
@@ -80,22 +80,22 @@
             this.folderIcon.Image = ((System.Drawing.Image)(resources.GetObject("folderIcon.Image")));
             this.folderIcon.Location = new System.Drawing.Point(10, 10);
             this.folderIcon.Name = "folderIcon";
-            this.folderIcon.Size = new System.Drawing.Size(56, 66);
+            this.folderIcon.Size = new System.Drawing.Size(64, 66);
             this.folderIcon.TabIndex = 8;
             this.folderIcon.TabStop = false;
             // 
-            // title
+            // inventoryManagementLabel
             // 
-            this.title.AutoSize = true;
-            this.title.Font = new System.Drawing.Font("Sitka Banner", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.title.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.title.Location = new System.Drawing.Point(72, 21);
-            this.title.Name = "title";
-            this.title.Padding = new System.Windows.Forms.Padding(0, 5, 0, 10);
-            this.title.Size = new System.Drawing.Size(287, 48);
-            this.title.TabIndex = 7;
-            this.title.Text = "Inventory Management System\r\n";
-            this.title.Click += new System.EventHandler(this.title_Click);
+            this.inventoryManagementLabel.AutoSize = true;
+            this.inventoryManagementLabel.Font = new System.Drawing.Font("Sitka Banner", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inventoryManagementLabel.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.inventoryManagementLabel.Location = new System.Drawing.Point(72, 21);
+            this.inventoryManagementLabel.Name = "inventoryManagementLabel";
+            this.inventoryManagementLabel.Padding = new System.Windows.Forms.Padding(0, 5, 0, 10);
+            this.inventoryManagementLabel.Size = new System.Drawing.Size(287, 48);
+            this.inventoryManagementLabel.TabIndex = 7;
+            this.inventoryManagementLabel.Text = "Inventory Management System\r\n";
+            this.inventoryManagementLabel.Click += new System.EventHandler(this.title_Click);
             // 
             // panelFooter
             // 
@@ -103,7 +103,7 @@
             this.panelFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelFooter.Location = new System.Drawing.Point(0, 561);
             this.panelFooter.Name = "panelFooter";
-            this.panelFooter.Size = new System.Drawing.Size(979, 10);
+            this.panelFooter.Size = new System.Drawing.Size(1232, 10);
             this.panelFooter.TabIndex = 1;
             // 
             // panelMain
@@ -113,7 +113,7 @@
             this.panelMain.Font = new System.Drawing.Font("Sitka Banner", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelMain.Location = new System.Drawing.Point(0, 83);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(979, 478);
+            this.panelMain.Size = new System.Drawing.Size(1232, 478);
             this.panelMain.TabIndex = 2;
             this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint);
             // 
@@ -122,7 +122,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(212)))), ((int)(((byte)(228)))));
             this.panel1.Controls.Add(this.customersButton);
             this.panel1.Controls.Add(this.ordersButton);
-            this.panel1.Controls.Add(this.productButton);
+            this.panel1.Controls.Add(this.productsButton);
             this.panel1.Controls.Add(this.usersButton);
             this.panel1.Controls.Add(this.categoriesButton);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -144,26 +144,27 @@
             // ordersButton
             // 
             this.ordersButton.AutoSize = true;
-            this.ordersButton.Location = new System.Drawing.Point(22, 255);
+            this.ordersButton.Location = new System.Drawing.Point(25, 255);
             this.ordersButton.Name = "ordersButton";
             this.ordersButton.Size = new System.Drawing.Size(68, 24);
             this.ordersButton.TabIndex = 4;
             this.ordersButton.Text = "ORDERS";
+            this.ordersButton.Click += new System.EventHandler(this.ordersButton_Click);
             // 
-            // productButton
+            // productsButton
             // 
-            this.productButton.AutoSize = true;
-            this.productButton.Location = new System.Drawing.Point(22, 37);
-            this.productButton.Name = "productButton";
-            this.productButton.Size = new System.Drawing.Size(77, 24);
-            this.productButton.TabIndex = 0;
-            this.productButton.Text = "PRODUCT";
-            this.productButton.Click += new System.EventHandler(this.label1_Click);
+            this.productsButton.AutoSize = true;
+            this.productsButton.Location = new System.Drawing.Point(17, 37);
+            this.productsButton.Name = "productsButton";
+            this.productsButton.Size = new System.Drawing.Size(85, 24);
+            this.productsButton.TabIndex = 0;
+            this.productsButton.Text = "PRODUCTS";
+            this.productsButton.Click += new System.EventHandler(this.productsButton_Click);
             // 
             // usersButton
             // 
             this.usersButton.AutoSize = true;
-            this.usersButton.Location = new System.Drawing.Point(28, 203);
+            this.usersButton.Location = new System.Drawing.Point(32, 203);
             this.usersButton.Name = "usersButton";
             this.usersButton.Size = new System.Drawing.Size(55, 24);
             this.usersButton.TabIndex = 3;
@@ -173,23 +174,24 @@
             // categoriesButton
             // 
             this.categoriesButton.AutoSize = true;
-            this.categoriesButton.Location = new System.Drawing.Point(12, 149);
+            this.categoriesButton.Location = new System.Drawing.Point(10, 149);
             this.categoriesButton.Name = "categoriesButton";
             this.categoriesButton.Size = new System.Drawing.Size(98, 24);
             this.categoriesButton.TabIndex = 2;
             this.categoriesButton.Text = "CATEGORIES";
+            this.categoriesButton.Click += new System.EventHandler(this.categoriesButton_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(979, 571);
+            this.ClientSize = new System.Drawing.Size(1232, 571);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelFooter);
             this.Controls.Add(this.panelHeader);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Main form";
+            this.Text = "Inventory Management System";
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -207,8 +209,8 @@
         private System.Windows.Forms.Panel panelFooter;
         private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.PictureBox folderIcon;
-        private System.Windows.Forms.Label title;
-        private System.Windows.Forms.Label productButton;
+        private System.Windows.Forms.Label inventoryManagementLabel;
+        private System.Windows.Forms.Label productsButton;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label ordersButton;
         private System.Windows.Forms.Label usersButton;

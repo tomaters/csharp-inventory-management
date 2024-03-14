@@ -32,7 +32,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.exitButton = new System.Windows.Forms.PictureBox();
             this.folderIcon = new System.Windows.Forms.PictureBox();
-            this.title = new System.Windows.Forms.Label();
+            this.inventoryManagementLabel = new System.Windows.Forms.Label();
             this.usernameTextbox = new System.Windows.Forms.TextBox();
             this.passwordTextbox = new System.Windows.Forms.TextBox();
             this.usernameLabel = new System.Windows.Forms.Label();
@@ -49,7 +49,7 @@
             this.panel1.BackColor = System.Drawing.Color.PowderBlue;
             this.panel1.Controls.Add(this.exitButton);
             this.panel1.Controls.Add(this.folderIcon);
-            this.panel1.Controls.Add(this.title);
+            this.panel1.Controls.Add(this.inventoryManagementLabel);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -80,18 +80,18 @@
             this.folderIcon.TabStop = false;
             this.folderIcon.Click += new System.EventHandler(this.folderIcon_Click);
             // 
-            // title
+            // inventoryManagementLabel
             // 
-            this.title.AutoSize = true;
-            this.title.Font = new System.Drawing.Font("Sitka Banner", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.title.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.title.Location = new System.Drawing.Point(59, 18);
-            this.title.Name = "title";
-            this.title.Padding = new System.Windows.Forms.Padding(0, 5, 0, 10);
-            this.title.Size = new System.Drawing.Size(219, 48);
-            this.title.TabIndex = 2;
-            this.title.Text = "Inventory Management\r\n";
-            this.title.Click += new System.EventHandler(this.label1_Click);
+            this.inventoryManagementLabel.AutoSize = true;
+            this.inventoryManagementLabel.Font = new System.Drawing.Font("Sitka Banner", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inventoryManagementLabel.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.inventoryManagementLabel.Location = new System.Drawing.Point(59, 18);
+            this.inventoryManagementLabel.Name = "inventoryManagementLabel";
+            this.inventoryManagementLabel.Padding = new System.Windows.Forms.Padding(0, 5, 0, 10);
+            this.inventoryManagementLabel.Size = new System.Drawing.Size(219, 48);
+            this.inventoryManagementLabel.TabIndex = 2;
+            this.inventoryManagementLabel.Text = "Inventory Management\r\n";
+            this.inventoryManagementLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // usernameTextbox
             // 
@@ -181,7 +181,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox usernameTextbox;
-        private System.Windows.Forms.Label title;
+        private System.Windows.Forms.Label inventoryManagementLabel;
         private System.Windows.Forms.TextBox passwordTextbox;
         private System.Windows.Forms.Label usernameLabel;
         private System.Windows.Forms.Label passwordLabel;

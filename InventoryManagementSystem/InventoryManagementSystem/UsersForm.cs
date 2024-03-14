@@ -68,8 +68,8 @@ namespace InventoryManagementSystem
         private void dataGridViewUser_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             string colName = dataGridViewUser.Columns[e.ColumnIndex].Name;
-            // response when 'Edit' is clicked
-            if (colName == "Edit")
+            // response when 'EditUser' is clicked
+            if (colName == "EditUser")
             {
                 UserInfo userInfo = new UserInfo();
                 // change info of username accordingly
@@ -85,8 +85,8 @@ namespace InventoryManagementSystem
                 userInfo.usernameTextbox.Enabled = false;
                 userInfo.ShowDialog();
             }
-            // response when 'Delete' is clicked
-            else if(colName == "Delete")
+            // response when 'DeleteUser' is clicked
+            else if(colName == "DeleteUser")
             {
                 if(MessageBox.Show("Do you want to delete this user?", "Delete record", MessageBoxButtons.YesNo, MessageBoxIcon.Question)==DialogResult.Yes)
                 {

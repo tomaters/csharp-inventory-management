@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserInfo));
-            this.title = new System.Windows.Forms.Label();
+            this.userInformationLabel = new System.Windows.Forms.Label();
             this.folderIcon = new System.Windows.Forms.PictureBox();
             this.panelHeader = new System.Windows.Forms.Panel();
             this.exitButton = new System.Windows.Forms.PictureBox();
@@ -54,19 +54,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
             this.SuspendLayout();
             // 
-            // title
+            // userInformationLabel
             // 
-            this.title.AutoSize = true;
-            this.title.Font = new System.Drawing.Font("Sitka Banner", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.title.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.title.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.title.Location = new System.Drawing.Point(28, 14);
-            this.title.Name = "title";
-            this.title.Padding = new System.Windows.Forms.Padding(0, 5, 0, 10);
-            this.title.Size = new System.Drawing.Size(165, 48);
-            this.title.TabIndex = 7;
-            this.title.Text = "User Information";
-            this.title.Click += new System.EventHandler(this.title_Click);
+            this.userInformationLabel.AutoSize = true;
+            this.userInformationLabel.Font = new System.Drawing.Font("Sitka Banner", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userInformationLabel.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.userInformationLabel.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.userInformationLabel.Location = new System.Drawing.Point(28, 14);
+            this.userInformationLabel.Name = "userInformationLabel";
+            this.userInformationLabel.Padding = new System.Windows.Forms.Padding(0, 5, 0, 10);
+            this.userInformationLabel.Size = new System.Drawing.Size(165, 48);
+            this.userInformationLabel.TabIndex = 7;
+            this.userInformationLabel.Text = "User Information";
+            this.userInformationLabel.Click += new System.EventHandler(this.title_Click);
             // 
             // folderIcon
             // 
@@ -85,7 +85,7 @@
             this.panelHeader.BackColor = System.Drawing.Color.PowderBlue;
             this.panelHeader.Controls.Add(this.exitButton);
             this.panelHeader.Controls.Add(this.folderIcon);
-            this.panelHeader.Controls.Add(this.title);
+            this.panelHeader.Controls.Add(this.userInformationLabel);
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHeader.Location = new System.Drawing.Point(0, 0);
             this.panelHeader.Name = "panelHeader";
@@ -292,7 +292,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label title;
+        private System.Windows.Forms.Label userInformationLabel;
         private System.Windows.Forms.PictureBox folderIcon;
         private System.Windows.Forms.Panel panelHeader;
         private System.Windows.Forms.Panel panelFooter;

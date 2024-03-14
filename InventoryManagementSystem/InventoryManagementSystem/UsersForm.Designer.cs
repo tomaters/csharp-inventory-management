@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UsersForm));
             this.panelFooter = new System.Windows.Forms.Panel();
             this.addUserButton = new System.Windows.Forms.Button();
@@ -39,8 +39,8 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
+            this.EditUser = new System.Windows.Forms.DataGridViewImageColumn();
+            this.DeleteUser = new System.Windows.Forms.DataGridViewImageColumn();
             this.panelFooter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUser)).BeginInit();
             this.SuspendLayout();
@@ -59,7 +59,8 @@
             // 
             // addUserButton
             // 
-            this.addUserButton.Location = new System.Drawing.Point(515, 6);
+            this.addUserButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.addUserButton.Location = new System.Drawing.Point(710, 6);
             this.addUserButton.Name = "addUserButton";
             this.addUserButton.Size = new System.Drawing.Size(94, 32);
             this.addUserButton.TabIndex = 4;
@@ -81,14 +82,14 @@
             // 
             this.dataGridViewUser.AllowUserToAddRows = false;
             this.dataGridViewUser.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.PowderBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Sitka Banner", 10.2F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewUser.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.PowderBlue;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Sitka Banner", 10.2F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewUser.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewUser.ColumnHeadersHeight = 29;
             this.dataGridViewUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridViewUser.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -97,8 +98,8 @@
             this.Column2,
             this.Column3,
             this.Column4,
-            this.Edit,
-            this.Delete});
+            this.EditUser,
+            this.DeleteUser});
             this.dataGridViewUser.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewUser.EnableHeadersVisualStyles = false;
             this.dataGridViewUser.Location = new System.Drawing.Point(0, 0);
@@ -149,23 +150,23 @@
             this.Column4.Name = "Column4";
             this.Column4.Width = 137;
             // 
-            // Edit
+            // EditUser
             // 
-            this.Edit.HeaderText = "";
-            this.Edit.Image = ((System.Drawing.Image)(resources.GetObject("Edit.Image")));
-            this.Edit.MinimumWidth = 6;
-            this.Edit.Name = "Edit";
-            this.Edit.ReadOnly = true;
-            this.Edit.Width = 25;
+            this.EditUser.HeaderText = "";
+            this.EditUser.Image = ((System.Drawing.Image)(resources.GetObject("EditUser.Image")));
+            this.EditUser.MinimumWidth = 6;
+            this.EditUser.Name = "EditUser";
+            this.EditUser.ReadOnly = true;
+            this.EditUser.Width = 25;
             // 
-            // Delete
+            // DeleteUser
             // 
-            this.Delete.HeaderText = "";
-            this.Delete.Image = ((System.Drawing.Image)(resources.GetObject("Delete.Image")));
-            this.Delete.MinimumWidth = 6;
-            this.Delete.Name = "Delete";
-            this.Delete.ReadOnly = true;
-            this.Delete.Width = 25;
+            this.DeleteUser.HeaderText = "";
+            this.DeleteUser.Image = ((System.Drawing.Image)(resources.GetObject("DeleteUser.Image")));
+            this.DeleteUser.MinimumWidth = 6;
+            this.DeleteUser.Name = "DeleteUser";
+            this.DeleteUser.ReadOnly = true;
+            this.DeleteUser.Width = 25;
             // 
             // UsersForm
             // 
@@ -196,7 +197,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewImageColumn Edit;
-        private System.Windows.Forms.DataGridViewImageColumn Delete;
+        private System.Windows.Forms.DataGridViewImageColumn EditUser;
+        private System.Windows.Forms.DataGridViewImageColumn DeleteUser;
     }
 }

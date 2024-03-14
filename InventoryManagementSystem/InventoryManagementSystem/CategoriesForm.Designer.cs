@@ -1,6 +1,6 @@
 ﻿namespace InventoryManagementSystem
 {
-    partial class CustomersForm
+    partial class CategoriesForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomersForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CategoriesForm));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridViewUser = new System.Windows.Forms.DataGridView();
             this.Column0 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,19 +40,17 @@
             this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.panelFooter = new System.Windows.Forms.Panel();
-            this.addCustomerButton = new System.Windows.Forms.Button();
-            this.manageCustomersLabel = new System.Windows.Forms.Label();
-            this.dataGridViewCustomer = new System.Windows.Forms.DataGridView();
-            this.c0 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EditCustomer = new System.Windows.Forms.DataGridViewImageColumn();
-            this.DeleteCustomer = new System.Windows.Forms.DataGridViewImageColumn();
+            this.addCategoryButton = new System.Windows.Forms.Button();
+            this.manageCategoriesLabel = new System.Windows.Forms.Label();
+            this.dataGridViewCategory = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EditCategory = new System.Windows.Forms.DataGridViewImageColumn();
+            this.DeleteCategory = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUser)).BeginInit();
             this.panelFooter.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCustomer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCategory)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridViewUser
@@ -61,7 +59,7 @@
             this.dataGridViewUser.BackgroundColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.PowderBlue;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Sitka Banner", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Sitka Banner", 10.2F);
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -80,10 +78,11 @@
             this.dataGridViewUser.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewUser.EnableHeadersVisualStyles = false;
             this.dataGridViewUser.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewUser.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridViewUser.Name = "dataGridViewUser";
             this.dataGridViewUser.RowHeadersWidth = 51;
             this.dataGridViewUser.RowTemplate.Height = 24;
-            this.dataGridViewUser.Size = new System.Drawing.Size(816, 415);
+            this.dataGridViewUser.Size = new System.Drawing.Size(816, 456);
             this.dataGridViewUser.TabIndex = 4;
             // 
             // Column0
@@ -147,142 +146,127 @@
             // panelFooter
             // 
             this.panelFooter.BackColor = System.Drawing.Color.PowderBlue;
-            this.panelFooter.Controls.Add(this.addCustomerButton);
-            this.panelFooter.Controls.Add(this.manageCustomersLabel);
+            this.panelFooter.Controls.Add(this.addCategoryButton);
+            this.panelFooter.Controls.Add(this.manageCategoriesLabel);
             this.panelFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelFooter.Location = new System.Drawing.Point(0, 374);
+            this.panelFooter.Location = new System.Drawing.Point(0, 404);
+            this.panelFooter.Margin = new System.Windows.Forms.Padding(4);
             this.panelFooter.Name = "panelFooter";
-            this.panelFooter.Size = new System.Drawing.Size(816, 41);
+            this.panelFooter.Size = new System.Drawing.Size(816, 52);
             this.panelFooter.TabIndex = 5;
             // 
-            // addCustomerButton
+            // addCategoryButton
             // 
-            this.addCustomerButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.addCustomerButton.Location = new System.Drawing.Point(664, 6);
-            this.addCustomerButton.Name = "addCustomerButton";
-            this.addCustomerButton.Size = new System.Drawing.Size(140, 32);
-            this.addCustomerButton.TabIndex = 4;
-            this.addCustomerButton.Text = "Add a Customer";
-            this.addCustomerButton.UseVisualStyleBackColor = true;
-            this.addCustomerButton.Click += new System.EventHandler(this.addCustomerButton_Click);
+            this.addCategoryButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.addCategoryButton.Location = new System.Drawing.Point(678, 8);
+            this.addCategoryButton.Margin = new System.Windows.Forms.Padding(4);
+            this.addCategoryButton.Name = "addCategoryButton";
+            this.addCategoryButton.Size = new System.Drawing.Size(125, 34);
+            this.addCategoryButton.TabIndex = 4;
+            this.addCategoryButton.Text = "Add a Category";
+            this.addCategoryButton.UseVisualStyleBackColor = true;
+            this.addCategoryButton.Click += new System.EventHandler(this.addCategoryButton_Click);
             // 
-            // manageCustomersLabel
+            // manageCategoriesLabel
             // 
-            this.manageCustomersLabel.AutoSize = true;
-            this.manageCustomersLabel.Location = new System.Drawing.Point(12, 8);
-            this.manageCustomersLabel.Name = "manageCustomersLabel";
-            this.manageCustomersLabel.Size = new System.Drawing.Size(133, 24);
-            this.manageCustomersLabel.TabIndex = 1;
-            this.manageCustomersLabel.Text = "Manage Customers";
+            this.manageCategoriesLabel.AutoSize = true;
+            this.manageCategoriesLabel.Location = new System.Drawing.Point(16, 13);
+            this.manageCategoriesLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.manageCategoriesLabel.Name = "manageCategoriesLabel";
+            this.manageCategoriesLabel.Size = new System.Drawing.Size(132, 24);
+            this.manageCategoriesLabel.TabIndex = 1;
+            this.manageCategoriesLabel.Text = "Manage Categories";
             // 
-            // dataGridViewCustomer
+            // dataGridViewCategory
             // 
-            this.dataGridViewCustomer.AllowUserToAddRows = false;
-            this.dataGridViewCustomer.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewCategory.AllowUserToAddRows = false;
+            this.dataGridViewCategory.BackgroundColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.PowderBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Sitka Banner", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Sitka Banner", 10.2F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewCustomer.ColumnHeadersHeight = 29;
-            this.dataGridViewCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGridViewCustomer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.c0,
-            this.c1,
-            this.c2,
-            this.c3,
-            this.c4,
-            this.EditCustomer,
-            this.DeleteCustomer});
-            this.dataGridViewCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewCustomer.EnableHeadersVisualStyles = false;
-            this.dataGridViewCustomer.Location = new System.Drawing.Point(0, 0);
-            this.dataGridViewCustomer.Name = "dataGridViewCustomer";
-            this.dataGridViewCustomer.RowHeadersWidth = 51;
-            this.dataGridViewCustomer.RowTemplate.Height = 24;
-            this.dataGridViewCustomer.Size = new System.Drawing.Size(816, 374);
-            this.dataGridViewCustomer.TabIndex = 6;
-            this.dataGridViewCustomer.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewCustomer_CellContentClick);
+            this.dataGridViewCategory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewCategory.ColumnHeadersHeight = 29;
+            this.dataGridViewCategory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridViewCategory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.EditCategory,
+            this.DeleteCategory});
+            this.dataGridViewCategory.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewCategory.EnableHeadersVisualStyles = false;
+            this.dataGridViewCategory.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewCategory.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridViewCategory.Name = "dataGridViewCategory";
+            this.dataGridViewCategory.RowHeadersWidth = 51;
+            this.dataGridViewCategory.RowTemplate.Height = 24;
+            this.dataGridViewCategory.Size = new System.Drawing.Size(816, 404);
+            this.dataGridViewCategory.TabIndex = 6;
+            this.dataGridViewCategory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewCategory_CellContentClick);
             // 
-            // c0
+            // dataGridViewTextBoxColumn1
             // 
-            this.c0.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.c0.HeaderText = "No";
-            this.c0.MinimumWidth = 6;
-            this.c0.Name = "c0";
-            this.c0.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.c0.Width = 58;
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn1.HeaderText = "No";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn1.Width = 58;
             // 
-            // c1
+            // dataGridViewTextBoxColumn3
             // 
-            this.c1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.c1.HeaderText = "Customer ID";
-            this.c1.MinimumWidth = 6;
-            this.c1.Name = "c1";
-            this.c1.Width = 120;
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn3.HeaderText = "Category ID";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 115;
             // 
-            // c2
+            // dataGridViewTextBoxColumn4
             // 
-            this.c2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.c2.HeaderText = "Name";
-            this.c2.MinimumWidth = 6;
-            this.c2.Name = "c2";
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn4.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
-            // c3
+            // EditCategory
             // 
-            this.c3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.c3.HeaderText = "Email Address";
-            this.c3.MinimumWidth = 6;
-            this.c3.Name = "c3";
-            this.c3.Width = 130;
+            this.EditCategory.HeaderText = "";
+            this.EditCategory.Image = ((System.Drawing.Image)(resources.GetObject("EditCategory.Image")));
+            this.EditCategory.MinimumWidth = 6;
+            this.EditCategory.Name = "EditCategory";
+            this.EditCategory.ReadOnly = true;
+            this.EditCategory.Width = 25;
             // 
-            // c4
+            // DeleteCategory
             // 
-            this.c4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.c4.HeaderText = "Phone Number";
-            this.c4.MinimumWidth = 6;
-            this.c4.Name = "c4";
-            this.c4.Width = 137;
+            this.DeleteCategory.HeaderText = "";
+            this.DeleteCategory.Image = ((System.Drawing.Image)(resources.GetObject("DeleteCategory.Image")));
+            this.DeleteCategory.MinimumWidth = 6;
+            this.DeleteCategory.Name = "DeleteCategory";
+            this.DeleteCategory.ReadOnly = true;
+            this.DeleteCategory.Width = 25;
             // 
-            // EditCustomer
-            // 
-            this.EditCustomer.HeaderText = "";
-            this.EditCustomer.Image = ((System.Drawing.Image)(resources.GetObject("EditCustomer.Image")));
-            this.EditCustomer.MinimumWidth = 6;
-            this.EditCustomer.Name = "EditCustomer";
-            this.EditCustomer.ReadOnly = true;
-            this.EditCustomer.Width = 25;
-            // 
-            // DeleteCustomer
-            // 
-            this.DeleteCustomer.HeaderText = "";
-            this.DeleteCustomer.Image = ((System.Drawing.Image)(resources.GetObject("DeleteCustomer.Image")));
-            this.DeleteCustomer.MinimumWidth = 6;
-            this.DeleteCustomer.Name = "DeleteCustomer";
-            this.DeleteCustomer.ReadOnly = true;
-            this.DeleteCustomer.Width = 25;
-            // 
-            // CustomersForm
+            // CategoriesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(816, 415);
-            this.Controls.Add(this.dataGridViewCustomer);
+            this.ClientSize = new System.Drawing.Size(816, 456);
+            this.Controls.Add(this.dataGridViewCategory);
             this.Controls.Add(this.panelFooter);
             this.Controls.Add(this.dataGridViewUser);
-            this.Font = new System.Drawing.Font("Sitka Banner", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Sitka Banner", 10.2F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "CustomersForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CustomerForm";
+            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.Name = "CategoriesForm";
+            this.Text = "CategoriesForm";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUser)).EndInit();
             this.panelFooter.ResumeLayout(false);
             this.panelFooter.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCustomer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCategory)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -298,15 +282,13 @@
         private System.Windows.Forms.DataGridViewImageColumn Edit;
         private System.Windows.Forms.DataGridViewImageColumn Delete;
         private System.Windows.Forms.Panel panelFooter;
-        private System.Windows.Forms.Button addCustomerButton;
-        private System.Windows.Forms.Label manageCustomersLabel;
-        private System.Windows.Forms.DataGridView dataGridViewCustomer;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c0;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn c4;
-        private System.Windows.Forms.DataGridViewImageColumn EditCustomer;
-        private System.Windows.Forms.DataGridViewImageColumn DeleteCustomer;
+        private System.Windows.Forms.Button addCategoryButton;
+        private System.Windows.Forms.Label manageCategoriesLabel;
+        private System.Windows.Forms.DataGridView dataGridViewCategory;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewImageColumn EditCategory;
+        private System.Windows.Forms.DataGridViewImageColumn DeleteCategory;
     }
 }

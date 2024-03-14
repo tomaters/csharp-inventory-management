@@ -24,7 +24,7 @@ namespace InventoryManagementSystem
         public void LoadProducts()
         {
             dataGridViewProduct.Rows.Clear();
-            command = new SqlCommand("SELECT * FROM products", connection);
+            command = new SqlCommand("SELECT * FROM products WHERE CONCAT(productId, productName, productQuantity, productPrice, productDescription, productCategory) LIKE '%" + searchProductTextbox.Text + "%'", connection);
             connection.Open();
             sqlDataReader = command.ExecuteReader();
 
@@ -86,6 +86,16 @@ namespace InventoryManagementSystem
             productInfoForm.updateProductInfoButton.Enabled = false;
             productInfoForm.ShowDialog();
             LoadProducts();
+        }
+
+        private void searchProductTextbox_TextChanged(object sender, EventArgs e)
+        {
+            LoadProducts();
+        }
+
+        private void panelFooter_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

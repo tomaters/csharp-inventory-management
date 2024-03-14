@@ -41,6 +41,8 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EditUser = new System.Windows.Forms.DataGridViewImageColumn();
             this.DeleteUser = new System.Windows.Forms.DataGridViewImageColumn();
+            this.searchUserTextbox = new System.Windows.Forms.TextBox();
+            this.searchUserLabel = new System.Windows.Forms.Label();
             this.panelFooter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUser)).BeginInit();
             this.SuspendLayout();
@@ -48,6 +50,8 @@
             // panelFooter
             // 
             this.panelFooter.BackColor = System.Drawing.Color.PowderBlue;
+            this.panelFooter.Controls.Add(this.searchUserTextbox);
+            this.panelFooter.Controls.Add(this.searchUserLabel);
             this.panelFooter.Controls.Add(this.addUserButton);
             this.panelFooter.Controls.Add(this.manageUsersLabel);
             this.panelFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -60,7 +64,7 @@
             // addUserButton
             // 
             this.addUserButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.addUserButton.Location = new System.Drawing.Point(710, 6);
+            this.addUserButton.Location = new System.Drawing.Point(710, 4);
             this.addUserButton.Name = "addUserButton";
             this.addUserButton.Size = new System.Drawing.Size(94, 32);
             this.addUserButton.TabIndex = 4;
@@ -168,6 +172,23 @@
             this.DeleteUser.ReadOnly = true;
             this.DeleteUser.Width = 25;
             // 
+            // searchUserTextbox
+            // 
+            this.searchUserTextbox.Location = new System.Drawing.Point(261, 6);
+            this.searchUserTextbox.Name = "searchUserTextbox";
+            this.searchUserTextbox.Size = new System.Drawing.Size(354, 29);
+            this.searchUserTextbox.TabIndex = 7;
+            this.searchUserTextbox.TextChanged += new System.EventHandler(this.searchUserTextbox_TextChanged);
+            // 
+            // searchUserLabel
+            // 
+            this.searchUserLabel.AutoSize = true;
+            this.searchUserLabel.Location = new System.Drawing.Point(202, 8);
+            this.searchUserLabel.Name = "searchUserLabel";
+            this.searchUserLabel.Size = new System.Drawing.Size(53, 24);
+            this.searchUserLabel.TabIndex = 8;
+            this.searchUserLabel.Text = "Search";
+            // 
             // UsersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 24F);
@@ -199,5 +220,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewImageColumn EditUser;
         private System.Windows.Forms.DataGridViewImageColumn DeleteUser;
+        public System.Windows.Forms.TextBox searchUserTextbox;
+        private System.Windows.Forms.Label searchUserLabel;
     }
 }

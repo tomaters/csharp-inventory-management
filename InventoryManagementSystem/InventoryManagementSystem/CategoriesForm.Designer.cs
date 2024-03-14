@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CategoriesForm));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridViewUser = new System.Windows.Forms.DataGridView();
             this.Column0 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,6 +48,8 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EditCategory = new System.Windows.Forms.DataGridViewImageColumn();
             this.DeleteCategory = new System.Windows.Forms.DataGridViewImageColumn();
+            this.searchCategoryTextbox = new System.Windows.Forms.TextBox();
+            this.searchCategoryLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUser)).BeginInit();
             this.panelFooter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCategory)).BeginInit();
@@ -57,14 +59,14 @@
             // 
             this.dataGridViewUser.AllowUserToAddRows = false;
             this.dataGridViewUser.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.PowderBlue;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Sitka Banner", 10.2F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewUser.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.PowderBlue;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Sitka Banner", 10.2F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewUser.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewUser.ColumnHeadersHeight = 29;
             this.dataGridViewUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridViewUser.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -146,6 +148,8 @@
             // panelFooter
             // 
             this.panelFooter.BackColor = System.Drawing.Color.PowderBlue;
+            this.panelFooter.Controls.Add(this.searchCategoryTextbox);
+            this.panelFooter.Controls.Add(this.searchCategoryLabel);
             this.panelFooter.Controls.Add(this.addCategoryButton);
             this.panelFooter.Controls.Add(this.manageCategoriesLabel);
             this.panelFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -158,7 +162,7 @@
             // addCategoryButton
             // 
             this.addCategoryButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.addCategoryButton.Location = new System.Drawing.Point(678, 8);
+            this.addCategoryButton.Location = new System.Drawing.Point(678, 9);
             this.addCategoryButton.Margin = new System.Windows.Forms.Padding(4);
             this.addCategoryButton.Name = "addCategoryButton";
             this.addCategoryButton.Size = new System.Drawing.Size(125, 34);
@@ -170,7 +174,7 @@
             // manageCategoriesLabel
             // 
             this.manageCategoriesLabel.AutoSize = true;
-            this.manageCategoriesLabel.Location = new System.Drawing.Point(16, 13);
+            this.manageCategoriesLabel.Location = new System.Drawing.Point(16, 14);
             this.manageCategoriesLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.manageCategoriesLabel.Name = "manageCategoriesLabel";
             this.manageCategoriesLabel.Size = new System.Drawing.Size(132, 24);
@@ -181,14 +185,14 @@
             // 
             this.dataGridViewCategory.AllowUserToAddRows = false;
             this.dataGridViewCategory.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.PowderBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Sitka Banner", 10.2F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewCategory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.PowderBlue;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Sitka Banner", 10.2F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewCategory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewCategory.ColumnHeadersHeight = 29;
             this.dataGridViewCategory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridViewCategory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -250,6 +254,23 @@
             this.DeleteCategory.ReadOnly = true;
             this.DeleteCategory.Width = 25;
             // 
+            // searchCategoryTextbox
+            // 
+            this.searchCategoryTextbox.Location = new System.Drawing.Point(261, 12);
+            this.searchCategoryTextbox.Name = "searchCategoryTextbox";
+            this.searchCategoryTextbox.Size = new System.Drawing.Size(354, 29);
+            this.searchCategoryTextbox.TabIndex = 11;
+            this.searchCategoryTextbox.TextChanged += new System.EventHandler(this.searchCategoryTextbox_TextChanged);
+            // 
+            // searchCategoryLabel
+            // 
+            this.searchCategoryLabel.AutoSize = true;
+            this.searchCategoryLabel.Location = new System.Drawing.Point(202, 14);
+            this.searchCategoryLabel.Name = "searchCategoryLabel";
+            this.searchCategoryLabel.Size = new System.Drawing.Size(53, 24);
+            this.searchCategoryLabel.TabIndex = 12;
+            this.searchCategoryLabel.Text = "Search";
+            // 
             // CategoriesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 24F);
@@ -290,5 +311,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewImageColumn EditCategory;
         private System.Windows.Forms.DataGridViewImageColumn DeleteCategory;
+        public System.Windows.Forms.TextBox searchCategoryTextbox;
+        private System.Windows.Forms.Label searchCategoryLabel;
     }
 }

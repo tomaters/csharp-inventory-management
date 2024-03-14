@@ -25,7 +25,7 @@ namespace InventoryManagementSystem
         public void LoadUsers()
         {
             dataGridViewUser.Rows.Clear();
-            command = new SqlCommand("SELECT * FROM users", connection);
+            command = new SqlCommand("SELECT * FROM users WHERE CONCAT(username, fullname, password, email, phone) LIKE '%" + searchUserTextbox.Text + "%'", connection);
             connection.Open();
             sqlDataReader = command.ExecuteReader();
 
@@ -119,10 +119,14 @@ namespace InventoryManagementSystem
             userInfoForm.ShowDialog();
             LoadUsers();
         }
-
         private void panelFooter_Paint(object sender, PaintEventArgs e)
         {
  
+        }
+
+        private void searchUserTextbox_TextChanged(object sender, EventArgs e)
+        {
+            LoadUsers();
         }
     }
 }

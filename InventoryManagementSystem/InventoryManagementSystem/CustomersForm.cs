@@ -25,7 +25,7 @@ namespace InventoryManagementSystem
         public void LoadCustomers()
         {
             dataGridViewCustomer.Rows.Clear();
-            command = new SqlCommand("SELECT * FROM customers", connection);
+            command = new SqlCommand("SELECT * FROM customers WHERE CONCAT(customerId, customerName, customerEmail, customerPhone) LIKE '%" + searchCustomerTextbox.Text + "%'", connection);
             connection.Open();
             sqlDataReader = command.ExecuteReader();
 
@@ -84,6 +84,11 @@ namespace InventoryManagementSystem
             customerInfoForm.saveCustomerInfoButton.Enabled = true;
             customerInfoForm.updateCustomerInfoButton.Enabled = false;
             customerInfoForm.ShowDialog();
+            LoadCustomers();
+        }
+
+        private void searchCustomerTextbox_TextChanged(object sender, EventArgs e)
+        {
             LoadCustomers();
         }
     }

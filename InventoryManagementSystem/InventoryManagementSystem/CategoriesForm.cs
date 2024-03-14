@@ -24,7 +24,7 @@ namespace InventoryManagementSystem
         public void LoadCategories()
         {
             dataGridViewCategory.Rows.Clear();
-            command = new SqlCommand("SELECT * FROM categories", connection);
+            command = new SqlCommand("SELECT * FROM categories WHERE CONCAT(categoryId, categoryName) LIKE '%" + searchCategoryTextbox.Text + "%'", connection);
             connection.Open();
             sqlDataReader = command.ExecuteReader();
 
@@ -80,6 +80,11 @@ namespace InventoryManagementSystem
             categoryInfoForm.saveCategoryInfoButton.Enabled = true;
             categoryInfoForm.updateCategoryInfoButton.Enabled = false;
             categoryInfoForm.ShowDialog();
+            LoadCategories();
+        }
+
+        private void searchCategoryTextbox_TextChanged(object sender, EventArgs e)
+        {
             LoadCategories();
         }
     }

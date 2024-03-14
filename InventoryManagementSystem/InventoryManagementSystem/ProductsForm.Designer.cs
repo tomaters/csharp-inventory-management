@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductsForm));
             this.dataGridViewProduct = new System.Windows.Forms.DataGridView();
             this.panelFooter = new System.Windows.Forms.Panel();
@@ -43,6 +43,8 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EditProduct = new System.Windows.Forms.DataGridViewImageColumn();
             this.DeleteProduct = new System.Windows.Forms.DataGridViewImageColumn();
+            this.searchProductLabel = new System.Windows.Forms.Label();
+            this.searchProductTextbox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProduct)).BeginInit();
             this.panelFooter.SuspendLayout();
             this.SuspendLayout();
@@ -51,14 +53,14 @@
             // 
             this.dataGridViewProduct.AllowUserToAddRows = false;
             this.dataGridViewProduct.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.PowderBlue;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Sitka Banner", 10.2F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.PowderBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Sitka Banner", 10.2F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewProduct.ColumnHeadersHeight = 29;
             this.dataGridViewProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridViewProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -84,6 +86,8 @@
             // panelFooter
             // 
             this.panelFooter.BackColor = System.Drawing.Color.PowderBlue;
+            this.panelFooter.Controls.Add(this.searchProductTextbox);
+            this.panelFooter.Controls.Add(this.searchProductLabel);
             this.panelFooter.Controls.Add(this.addProductButton);
             this.panelFooter.Controls.Add(this.manageProductsLabel);
             this.panelFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -91,11 +95,12 @@
             this.panelFooter.Name = "panelFooter";
             this.panelFooter.Size = new System.Drawing.Size(816, 41);
             this.panelFooter.TabIndex = 4;
+            this.panelFooter.Paint += new System.Windows.Forms.PaintEventHandler(this.panelFooter_Paint);
             // 
             // addProductButton
             // 
             this.addProductButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.addProductButton.Location = new System.Drawing.Point(687, 6);
+            this.addProductButton.Location = new System.Drawing.Point(687, 3);
             this.addProductButton.Name = "addProductButton";
             this.addProductButton.Size = new System.Drawing.Size(117, 32);
             this.addProductButton.TabIndex = 4;
@@ -106,7 +111,7 @@
             // manageProductsLabel
             // 
             this.manageProductsLabel.AutoSize = true;
-            this.manageProductsLabel.Location = new System.Drawing.Point(12, 8);
+            this.manageProductsLabel.Location = new System.Drawing.Point(12, 7);
             this.manageProductsLabel.Name = "manageProductsLabel";
             this.manageProductsLabel.Size = new System.Drawing.Size(120, 24);
             this.manageProductsLabel.TabIndex = 1;
@@ -185,6 +190,23 @@
             this.DeleteProduct.ReadOnly = true;
             this.DeleteProduct.Width = 25;
             // 
+            // searchProductLabel
+            // 
+            this.searchProductLabel.AutoSize = true;
+            this.searchProductLabel.Location = new System.Drawing.Point(194, 7);
+            this.searchProductLabel.Name = "searchProductLabel";
+            this.searchProductLabel.Size = new System.Drawing.Size(53, 24);
+            this.searchProductLabel.TabIndex = 6;
+            this.searchProductLabel.Text = "Search";
+            // 
+            // searchProductTextbox
+            // 
+            this.searchProductTextbox.Location = new System.Drawing.Point(253, 5);
+            this.searchProductTextbox.Name = "searchProductTextbox";
+            this.searchProductTextbox.Size = new System.Drawing.Size(354, 29);
+            this.searchProductTextbox.TabIndex = 6;
+            this.searchProductTextbox.TextChanged += new System.EventHandler(this.searchProductTextbox_TextChanged);
+            // 
             // ProductsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 24F);
@@ -219,5 +241,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewImageColumn EditProduct;
         private System.Windows.Forms.DataGridViewImageColumn DeleteProduct;
+        private System.Windows.Forms.Label searchProductLabel;
+        public System.Windows.Forms.TextBox searchProductTextbox;
     }
 }

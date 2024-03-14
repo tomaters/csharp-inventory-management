@@ -33,7 +33,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.folderIcon = new System.Windows.Forms.PictureBox();
             this.inventoryManagementLabel = new System.Windows.Forms.Label();
-            this.panelFooter = new System.Windows.Forms.Panel();
             this.panelMain = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.customersButton = new System.Windows.Forms.Label();
@@ -97,15 +96,6 @@
             this.inventoryManagementLabel.Text = "Inventory Management System\r\n";
             this.inventoryManagementLabel.Click += new System.EventHandler(this.title_Click);
             // 
-            // panelFooter
-            // 
-            this.panelFooter.BackColor = System.Drawing.Color.PowderBlue;
-            this.panelFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelFooter.Location = new System.Drawing.Point(0, 561);
-            this.panelFooter.Name = "panelFooter";
-            this.panelFooter.Size = new System.Drawing.Size(1232, 10);
-            this.panelFooter.TabIndex = 1;
-            // 
             // panelMain
             // 
             this.panelMain.Controls.Add(this.panel1);
@@ -113,7 +103,7 @@
             this.panelMain.Font = new System.Drawing.Font("Sitka Banner", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelMain.Location = new System.Drawing.Point(0, 83);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1232, 478);
+            this.panelMain.Size = new System.Drawing.Size(1232, 488);
             this.panelMain.TabIndex = 2;
             this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint);
             // 
@@ -128,13 +118,13 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(127, 478);
+            this.panel1.Size = new System.Drawing.Size(127, 488);
             this.panel1.TabIndex = 5;
             // 
             // customersButton
             // 
             this.customersButton.AutoSize = true;
-            this.customersButton.Location = new System.Drawing.Point(11, 93);
+            this.customersButton.Location = new System.Drawing.Point(11, 91);
             this.customersButton.Name = "customersButton";
             this.customersButton.Size = new System.Drawing.Size(97, 24);
             this.customersButton.TabIndex = 1;
@@ -144,7 +134,7 @@
             // ordersButton
             // 
             this.ordersButton.AutoSize = true;
-            this.ordersButton.Location = new System.Drawing.Point(25, 255);
+            this.ordersButton.Location = new System.Drawing.Point(25, 253);
             this.ordersButton.Name = "ordersButton";
             this.ordersButton.Size = new System.Drawing.Size(68, 24);
             this.ordersButton.TabIndex = 4;
@@ -164,7 +154,7 @@
             // usersButton
             // 
             this.usersButton.AutoSize = true;
-            this.usersButton.Location = new System.Drawing.Point(32, 203);
+            this.usersButton.Location = new System.Drawing.Point(32, 199);
             this.usersButton.Name = "usersButton";
             this.usersButton.Size = new System.Drawing.Size(55, 24);
             this.usersButton.TabIndex = 3;
@@ -174,7 +164,7 @@
             // categoriesButton
             // 
             this.categoriesButton.AutoSize = true;
-            this.categoriesButton.Location = new System.Drawing.Point(10, 149);
+            this.categoriesButton.Location = new System.Drawing.Point(10, 145);
             this.categoriesButton.Name = "categoriesButton";
             this.categoriesButton.Size = new System.Drawing.Size(98, 24);
             this.categoriesButton.TabIndex = 2;
@@ -187,7 +177,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1232, 571);
             this.Controls.Add(this.panelMain);
-            this.Controls.Add(this.panelFooter);
             this.Controls.Add(this.panelHeader);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -206,7 +195,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panelHeader;
-        private System.Windows.Forms.Panel panelFooter;
         private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.PictureBox folderIcon;
         private System.Windows.Forms.Label inventoryManagementLabel;

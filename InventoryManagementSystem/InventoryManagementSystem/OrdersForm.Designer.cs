@@ -41,7 +41,7 @@
             this.panelFooter = new System.Windows.Forms.Panel();
             this.searchOrderTextbox = new System.Windows.Forms.TextBox();
             this.searchOrderLabel = new System.Windows.Forms.Label();
-            this.viewOrdersButton = new System.Windows.Forms.Button();
+            this.addOrderButton = new System.Windows.Forms.Button();
             this.manageOrdersLabel = new System.Windows.Forms.Label();
             this.dataGridViewOrder = new System.Windows.Forms.DataGridView();
             this.dataGridViewCustomer = new System.Windows.Forms.DataGridView();
@@ -53,8 +53,8 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
+            this.EditOrder = new System.Windows.Forms.DataGridViewImageColumn();
+            this.DeleteOrder = new System.Windows.Forms.DataGridViewImageColumn();
             this.panelFooter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOrder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCustomer)).BeginInit();
@@ -123,7 +123,7 @@
             this.panelFooter.BackColor = System.Drawing.Color.PowderBlue;
             this.panelFooter.Controls.Add(this.searchOrderTextbox);
             this.panelFooter.Controls.Add(this.searchOrderLabel);
-            this.panelFooter.Controls.Add(this.viewOrdersButton);
+            this.panelFooter.Controls.Add(this.addOrderButton);
             this.panelFooter.Controls.Add(this.manageOrdersLabel);
             this.panelFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelFooter.Location = new System.Drawing.Point(0, 415);
@@ -137,6 +137,7 @@
             this.searchOrderTextbox.Name = "searchOrderTextbox";
             this.searchOrderTextbox.Size = new System.Drawing.Size(354, 29);
             this.searchOrderTextbox.TabIndex = 9;
+            this.searchOrderTextbox.TextChanged += new System.EventHandler(this.searchOrderTextbox_TextChanged);
             // 
             // searchOrderLabel
             // 
@@ -147,16 +148,16 @@
             this.searchOrderLabel.TabIndex = 10;
             this.searchOrderLabel.Text = "Search";
             // 
-            // viewOrdersButton
+            // addOrderButton
             // 
-            this.viewOrdersButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.viewOrdersButton.Location = new System.Drawing.Point(664, 4);
-            this.viewOrdersButton.Name = "viewOrdersButton";
-            this.viewOrdersButton.Size = new System.Drawing.Size(140, 32);
-            this.viewOrdersButton.TabIndex = 4;
-            this.viewOrdersButton.Text = "View Orders";
-            this.viewOrdersButton.UseVisualStyleBackColor = true;
-            this.viewOrdersButton.Click += new System.EventHandler(this.viewOrdersButton_Click);
+            this.addOrderButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.addOrderButton.Location = new System.Drawing.Point(664, 4);
+            this.addOrderButton.Name = "addOrderButton";
+            this.addOrderButton.Size = new System.Drawing.Size(140, 32);
+            this.addOrderButton.TabIndex = 4;
+            this.addOrderButton.Text = "Add an Order";
+            this.addOrderButton.UseVisualStyleBackColor = true;
+            this.addOrderButton.Click += new System.EventHandler(this.addOrderButton_Click);
             // 
             // manageOrdersLabel
             // 
@@ -190,8 +191,8 @@
             this.Column5,
             this.Column6,
             this.Column7,
-            this.Edit,
-            this.Delete});
+            this.EditOrder,
+            this.DeleteOrder});
             this.dataGridViewOrder.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewOrder.EnableHeadersVisualStyles = false;
             this.dataGridViewOrder.Location = new System.Drawing.Point(0, 0);
@@ -293,23 +294,23 @@
             this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
             // 
-            // Edit
+            // EditOrder
             // 
-            this.Edit.HeaderText = "";
-            this.Edit.Image = ((System.Drawing.Image)(resources.GetObject("Edit.Image")));
-            this.Edit.MinimumWidth = 6;
-            this.Edit.Name = "Edit";
-            this.Edit.ReadOnly = true;
-            this.Edit.Width = 25;
+            this.EditOrder.HeaderText = "";
+            this.EditOrder.Image = ((System.Drawing.Image)(resources.GetObject("EditOrder.Image")));
+            this.EditOrder.MinimumWidth = 6;
+            this.EditOrder.Name = "EditOrder";
+            this.EditOrder.ReadOnly = true;
+            this.EditOrder.Width = 25;
             // 
-            // Delete
+            // DeleteOrder
             // 
-            this.Delete.HeaderText = "";
-            this.Delete.Image = ((System.Drawing.Image)(resources.GetObject("Delete.Image")));
-            this.Delete.MinimumWidth = 6;
-            this.Delete.Name = "Delete";
-            this.Delete.ReadOnly = true;
-            this.Delete.Width = 25;
+            this.DeleteOrder.HeaderText = "";
+            this.DeleteOrder.Image = ((System.Drawing.Image)(resources.GetObject("DeleteOrder.Image")));
+            this.DeleteOrder.MinimumWidth = 6;
+            this.DeleteOrder.Name = "DeleteOrder";
+            this.DeleteOrder.ReadOnly = true;
+            this.DeleteOrder.Width = 25;
             // 
             // OrdersForm
             // 
@@ -345,7 +346,7 @@
         private System.Windows.Forms.Panel panelFooter;
         public System.Windows.Forms.TextBox searchOrderTextbox;
         private System.Windows.Forms.Label searchOrderLabel;
-        private System.Windows.Forms.Button viewOrdersButton;
+        private System.Windows.Forms.Button addOrderButton;
         private System.Windows.Forms.Label manageOrdersLabel;
         private System.Windows.Forms.DataGridView dataGridViewOrder;
         private System.Windows.Forms.DataGridView dataGridViewCustomer;
@@ -357,7 +358,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewImageColumn Edit;
-        private System.Windows.Forms.DataGridViewImageColumn Delete;
+        private System.Windows.Forms.DataGridViewImageColumn EditOrder;
+        private System.Windows.Forms.DataGridViewImageColumn DeleteOrder;
     }
 }

@@ -280,6 +280,7 @@
             this.Controls.Add(this.panelFooter);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UserInfo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserModule";
             ((System.ComponentModel.ISupportInitialize)(this.folderIcon)).EndInit();
             this.panelHeader.ResumeLayout(false);

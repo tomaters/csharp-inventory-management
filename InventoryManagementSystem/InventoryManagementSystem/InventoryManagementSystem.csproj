@@ -97,6 +97,18 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="OrderInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderInfo.Designer.cs">
+      <DependentUpon>OrderInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdersForm.Designer.cs">
+      <DependentUpon>OrdersForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProductInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +152,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderInfo.resx">
+      <DependentUpon>OrderInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdersForm.resx">
+      <DependentUpon>OrdersForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProductInfo.resx">
       <DependentUpon>ProductInfo.cs</DependentUpon>

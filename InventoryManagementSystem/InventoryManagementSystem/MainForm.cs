@@ -66,7 +66,7 @@ namespace InventoryManagementSystem
 
         private void ordersButton_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new OrdersForm());
         }
     }
 }

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductsForm));
             this.dataGridViewProduct = new System.Windows.Forms.DataGridView();
             this.panelFooter = new System.Windows.Forms.Panel();
@@ -53,14 +53,14 @@
             // 
             this.dataGridViewProduct.AllowUserToAddRows = false;
             this.dataGridViewProduct.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.PowderBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Sitka Banner", 10.2F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.PowderBlue;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Sitka Banner", 10.2F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewProduct.ColumnHeadersHeight = 29;
             this.dataGridViewProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridViewProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -100,7 +100,7 @@
             // addProductButton
             // 
             this.addProductButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.addProductButton.Location = new System.Drawing.Point(687, 3);
+            this.addProductButton.Location = new System.Drawing.Point(687, 5);
             this.addProductButton.Name = "addProductButton";
             this.addProductButton.Size = new System.Drawing.Size(117, 32);
             this.addProductButton.TabIndex = 4;
@@ -111,7 +111,7 @@
             // manageProductsLabel
             // 
             this.manageProductsLabel.AutoSize = true;
-            this.manageProductsLabel.Location = new System.Drawing.Point(12, 7);
+            this.manageProductsLabel.Location = new System.Drawing.Point(12, 9);
             this.manageProductsLabel.Name = "manageProductsLabel";
             this.manageProductsLabel.Size = new System.Drawing.Size(120, 24);
             this.manageProductsLabel.TabIndex = 1;
@@ -193,7 +193,7 @@
             // searchProductLabel
             // 
             this.searchProductLabel.AutoSize = true;
-            this.searchProductLabel.Location = new System.Drawing.Point(194, 7);
+            this.searchProductLabel.Location = new System.Drawing.Point(194, 9);
             this.searchProductLabel.Name = "searchProductLabel";
             this.searchProductLabel.Size = new System.Drawing.Size(53, 24);
             this.searchProductLabel.TabIndex = 6;
@@ -201,7 +201,7 @@
             // 
             // searchProductTextbox
             // 
-            this.searchProductTextbox.Location = new System.Drawing.Point(253, 5);
+            this.searchProductTextbox.Location = new System.Drawing.Point(253, 7);
             this.searchProductTextbox.Name = "searchProductTextbox";
             this.searchProductTextbox.Size = new System.Drawing.Size(354, 29);
             this.searchProductTextbox.TabIndex = 6;

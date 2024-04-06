@@ -24,7 +24,15 @@ namespace InventoryManagementSystem
         public void LoadOrders()
         {
             dataGridViewOrder.Rows.Clear();
-            command = new SqlCommand("SELECT * FROM orders WHERE CONCAT(orderId, orderDate, productId, customerId, quantity, price, total) LIKE '%" + searchOrderTextbox.Text + "%'", connection);
+            // assign aliases for tables: orders as O, products as P, customers as C
+            // O has columns from primary keys of P (productId) and C (customerId)
+            // use JOIN to retrieve product and customer names from tables where records match from these columns
+            // keep search function via WHERE CONCAT clause
+            command = new SqlCommand("SELECT orderId, orderDate, O.productId, P.productName, O.customerId, C.customerName, quantity, price, total " +
+                "FROM orders AS O " +
+                "JOIN customers AS C ON O.customerId = C.customerId " +
+                "JOIN products AS P ON O.productId = P.productId " +
+                "WHERE CONCAT(orderId, orderDate, O.productId, P.productName, O.customerId, C.customerName, quantity, price, total) LIKE '%" + searchOrderTextbox.Text + "%'", connection);
             connection.Open();
             sqlDataReader = command.ExecuteReader();
 
@@ -34,8 +42,8 @@ namespace InventoryManagementSystem
                 while (sqlDataReader.Read())
                 {
                     count++;
-                    dataGridViewOrder.Rows.Add(count, sqlDataReader[0].ToString(), sqlDataReader[1].ToString(), sqlDataReader[2].ToString(), sqlDataReader[3].ToString(),
-                        sqlDataReader[4].ToString(), sqlDataReader[5].ToString(), sqlDataReader[6].ToString());
+                    dataGridViewOrder.Rows.Add(count, sqlDataReader[0].ToString(), Convert.ToDateTime(sqlDataReader[1].ToString()).ToString("dd/MM/yyyy"), sqlDataReader[2].ToString(), sqlDataReader[3].ToString(),
+                        sqlDataReader[4].ToString(), sqlDataReader[5].ToString(), sqlDataReader[6].ToString(), sqlDataReader[7].ToString(), sqlDataReader[8].ToString());
                 }
             }
             catch (Exception ex)
@@ -51,17 +59,7 @@ namespace InventoryManagementSystem
         private void dataGridViewOrder_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             string colName = dataGridViewOrder.Columns[e.ColumnIndex].Name;
-            if (colName == "EditOrder")
-            {
-                OrderInfo orderInfo = new OrderInfo();
-
-                orderInfo.orderDatePicker.Value = dataGridViewOrder.Rows[e.RowIndex].Cells[3].;
-
-                orderInfo.saveOrderInfoButton.Enabled = false;
-                orderInfo.updateOrderInfoButton.Enabled = true;
-                orderInfo.ShowDialog();
-            }
-            else if (colName == "DeleteOrder")
+            if (colName == "DeleteOrder")
             {
                 if (MessageBox.Show("Do you want to delete this order?", "Delete record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
@@ -70,6 +68,14 @@ namespace InventoryManagementSystem
                     command.ExecuteNonQuery();
                     connection.Close();
                     MessageBox.Show("Record successfully deleted");
+                    
+                    // change quantity in DB to new quantity
+                    command = new SqlCommand("UPDATE products SET productQuantity = (productQuantity + @productQuantity) WHERE productId LIKE '" + dataGridViewOrder.Rows[e.RowIndex].Cells[3].Value.ToString() + "' ", connection);
+                    
+                    command.Parameters.AddWithValue("@productQuantity", Convert.ToInt16(dataGridViewOrder.Rows[e.RowIndex].Cells[5].Value.ToString())); ;
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                    connection.Close();
                 }
             }
             LoadOrders();
@@ -81,6 +87,7 @@ namespace InventoryManagementSystem
             orderInfoForm.saveOrderInfoButton.Enabled = true;
             orderInfoForm.updateOrderInfoButton.Enabled = false;
             orderInfoForm.ShowDialog();
+            LoadOrders();
         }
 
         private void searchOrderTextbox_TextChanged(object sender, EventArgs e)

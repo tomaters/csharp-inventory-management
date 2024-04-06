@@ -206,13 +206,27 @@ namespace InventoryManagementSystem
                     command.ExecuteNonQuery();
                     connection.Close();
                     MessageBox.Show("Order successfully added");
-                    this.Close();
+
+                    // update product quantity
+                    command = new SqlCommand("UPDATE products SET productQuantity = (productQuantity - @productQuantity) WHERE productId LIKE '" + productIdTextbox.Text + "' ", connection);
+                    command.Parameters.AddWithValue("@productQuantity", Convert.ToInt16(quantityUpDown.Value));
+
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                    connection.Close();
+                    Clear();
+                    LoadProducts();
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void updateOrderInfoButton_Click(object sender, EventArgs e)
+        {
+            Clear();
         }
     }
 }

@@ -411,6 +411,7 @@
             this.updateOrderInfoButton.TabIndex = 55;
             this.updateOrderInfoButton.Text = "Update";
             this.updateOrderInfoButton.UseVisualStyleBackColor = false;
+            this.updateOrderInfoButton.Click += new System.EventHandler(this.updateOrderInfoButton_Click);
             // 
             // clearOrderInfoButton
             // 

@@ -40,6 +40,7 @@
             this.productsButton = new System.Windows.Forms.Label();
             this.usersButton = new System.Windows.Forms.Label();
             this.categoriesButton = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.folderIcon)).BeginInit();
@@ -94,10 +95,10 @@
             this.inventoryManagementLabel.Size = new System.Drawing.Size(287, 48);
             this.inventoryManagementLabel.TabIndex = 7;
             this.inventoryManagementLabel.Text = "Inventory Management System\r\n";
-            this.inventoryManagementLabel.Click += new System.EventHandler(this.title_Click);
             // 
             // panelMain
             // 
+            this.panelMain.Controls.Add(this.label1);
             this.panelMain.Controls.Add(this.panel1);
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Font = new System.Drawing.Font("Sitka Banner", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -171,6 +172,18 @@
             this.categoriesButton.Text = "CATEGORIES";
             this.categoriesButton.Click += new System.EventHandler(this.categoriesButton_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Sitka Banner", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label1.Location = new System.Drawing.Point(299, 121);
+            this.label1.Name = "label1";
+            this.label1.Padding = new System.Windows.Forms.Padding(0, 5, 0, 10);
+            this.label1.Size = new System.Drawing.Size(753, 102);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Inventory Management System\r\n";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -186,6 +199,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.folderIcon)).EndInit();
             this.panelMain.ResumeLayout(false);
+            this.panelMain.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -205,5 +219,6 @@
         private System.Windows.Forms.Label categoriesButton;
         private System.Windows.Forms.Label customersButton;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

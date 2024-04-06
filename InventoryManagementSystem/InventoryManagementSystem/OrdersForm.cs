@@ -37,6 +37,8 @@ namespace InventoryManagementSystem
             sqlDataReader = command.ExecuteReader();
 
             int count = 0;
+            // total stores value of all shown orders
+            double total = 0;
             try
             {
                 while (sqlDataReader.Read())
@@ -44,6 +46,8 @@ namespace InventoryManagementSystem
                     count++;
                     dataGridViewOrder.Rows.Add(count, sqlDataReader[0].ToString(), Convert.ToDateTime(sqlDataReader[1].ToString()).ToString("dd/MM/yyyy"), sqlDataReader[2].ToString(), sqlDataReader[3].ToString(),
                         sqlDataReader[4].ToString(), sqlDataReader[5].ToString(), sqlDataReader[6].ToString(), sqlDataReader[7].ToString(), sqlDataReader[8].ToString());
+                    // arithmetic to store value into total
+                    total += Convert.ToInt32(sqlDataReader[8].ToString());
                 }
             }
             catch (Exception ex)
@@ -55,6 +59,11 @@ namespace InventoryManagementSystem
                 sqlDataReader.Close();
                 connection.Close();
             }
+
+            // display number of order shown; already stored into count
+            numberOfOrders.Text = count.ToString();
+            // display total price of all orders shown
+            totalPrice.Text = total.ToString();
         }
         private void dataGridViewOrder_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -93,6 +102,11 @@ namespace InventoryManagementSystem
         private void searchOrderTextbox_TextChanged(object sender, EventArgs e)
         {
             LoadOrders();
+        }
+
+        private void panelFooter_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

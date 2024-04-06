@@ -37,10 +37,6 @@ namespace InventoryManagementSystem
             InitializeComponent();
         }
 
-        private void title_Click(object sender, EventArgs e)
-        {
-
-        }
         private void panelMain_Paint(object sender, PaintEventArgs e)
         {
 

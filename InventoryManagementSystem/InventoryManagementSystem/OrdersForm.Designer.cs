@@ -39,12 +39,15 @@
             this.c0 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EditCustomer = new System.Windows.Forms.DataGridViewImageColumn();
             this.panelFooter = new System.Windows.Forms.Panel();
+            this.totalPrice = new System.Windows.Forms.Label();
+            this.totalPriceLabel = new System.Windows.Forms.Label();
+            this.numberOfOrders = new System.Windows.Forms.Label();
+            this.numberOfOrdersLabel = new System.Windows.Forms.Label();
             this.searchOrderTextbox = new System.Windows.Forms.TextBox();
             this.searchOrderLabel = new System.Windows.Forms.Label();
             this.addOrderButton = new System.Windows.Forms.Button();
             this.manageOrdersLabel = new System.Windows.Forms.Label();
             this.dataGridViewOrder = new System.Windows.Forms.DataGridView();
-            this.dataGridViewCustomer = new System.Windows.Forms.DataGridView();
             this.Column0 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,6 +60,7 @@
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EditOrder = new System.Windows.Forms.DataGridViewImageColumn();
             this.DeleteOrder = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewCustomer = new System.Windows.Forms.DataGridView();
             this.panelFooter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOrder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCustomer)).BeginInit();
@@ -123,19 +127,60 @@
             // panelFooter
             // 
             this.panelFooter.BackColor = System.Drawing.Color.PowderBlue;
+            this.panelFooter.Controls.Add(this.totalPrice);
+            this.panelFooter.Controls.Add(this.totalPriceLabel);
+            this.panelFooter.Controls.Add(this.numberOfOrders);
+            this.panelFooter.Controls.Add(this.numberOfOrdersLabel);
             this.panelFooter.Controls.Add(this.searchOrderTextbox);
             this.panelFooter.Controls.Add(this.searchOrderLabel);
             this.panelFooter.Controls.Add(this.addOrderButton);
             this.panelFooter.Controls.Add(this.manageOrdersLabel);
             this.panelFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelFooter.Location = new System.Drawing.Point(0, 415);
+            this.panelFooter.Location = new System.Drawing.Point(0, 368);
             this.panelFooter.Name = "panelFooter";
-            this.panelFooter.Size = new System.Drawing.Size(816, 41);
+            this.panelFooter.Size = new System.Drawing.Size(816, 88);
             this.panelFooter.TabIndex = 8;
+            this.panelFooter.Paint += new System.Windows.Forms.PaintEventHandler(this.panelFooter_Paint);
+            // 
+            // totalPrice
+            // 
+            this.totalPrice.AutoSize = true;
+            this.totalPrice.Location = new System.Drawing.Point(456, 51);
+            this.totalPrice.Name = "totalPrice";
+            this.totalPrice.Size = new System.Drawing.Size(14, 24);
+            this.totalPrice.TabIndex = 15;
+            this.totalPrice.Text = " ";
+            // 
+            // totalPriceLabel
+            // 
+            this.totalPriceLabel.AutoSize = true;
+            this.totalPriceLabel.Location = new System.Drawing.Point(378, 51);
+            this.totalPriceLabel.Name = "totalPriceLabel";
+            this.totalPriceLabel.Size = new System.Drawing.Size(81, 24);
+            this.totalPriceLabel.TabIndex = 13;
+            this.totalPriceLabel.Text = "Total Price:";
+            // 
+            // numberOfOrders
+            // 
+            this.numberOfOrders.AutoSize = true;
+            this.numberOfOrders.Location = new System.Drawing.Point(289, 51);
+            this.numberOfOrders.Name = "numberOfOrders";
+            this.numberOfOrders.Size = new System.Drawing.Size(14, 24);
+            this.numberOfOrders.TabIndex = 12;
+            this.numberOfOrders.Text = " ";
+            // 
+            // numberOfOrdersLabel
+            // 
+            this.numberOfOrdersLabel.AutoSize = true;
+            this.numberOfOrdersLabel.Location = new System.Drawing.Point(158, 51);
+            this.numberOfOrdersLabel.Name = "numberOfOrdersLabel";
+            this.numberOfOrdersLabel.Size = new System.Drawing.Size(136, 24);
+            this.numberOfOrdersLabel.TabIndex = 11;
+            this.numberOfOrdersLabel.Text = "Number of Orders: ";
             // 
             // searchOrderTextbox
             // 
-            this.searchOrderTextbox.Location = new System.Drawing.Point(261, 6);
+            this.searchOrderTextbox.Location = new System.Drawing.Point(218, 15);
             this.searchOrderTextbox.Name = "searchOrderTextbox";
             this.searchOrderTextbox.Size = new System.Drawing.Size(354, 29);
             this.searchOrderTextbox.TabIndex = 9;
@@ -144,7 +189,7 @@
             // searchOrderLabel
             // 
             this.searchOrderLabel.AutoSize = true;
-            this.searchOrderLabel.Location = new System.Drawing.Point(202, 8);
+            this.searchOrderLabel.Location = new System.Drawing.Point(159, 17);
             this.searchOrderLabel.Name = "searchOrderLabel";
             this.searchOrderLabel.Size = new System.Drawing.Size(53, 24);
             this.searchOrderLabel.TabIndex = 10;
@@ -153,7 +198,7 @@
             // addOrderButton
             // 
             this.addOrderButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.addOrderButton.Location = new System.Drawing.Point(664, 4);
+            this.addOrderButton.Location = new System.Drawing.Point(664, 44);
             this.addOrderButton.Name = "addOrderButton";
             this.addOrderButton.Size = new System.Drawing.Size(140, 32);
             this.addOrderButton.TabIndex = 4;
@@ -164,9 +209,10 @@
             // manageOrdersLabel
             // 
             this.manageOrdersLabel.AutoSize = true;
-            this.manageOrdersLabel.Location = new System.Drawing.Point(12, 8);
+            this.manageOrdersLabel.Font = new System.Drawing.Font("Sitka Display", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manageOrdersLabel.Location = new System.Drawing.Point(12, 51);
             this.manageOrdersLabel.Name = "manageOrdersLabel";
-            this.manageOrdersLabel.Size = new System.Drawing.Size(109, 24);
+            this.manageOrdersLabel.Size = new System.Drawing.Size(120, 24);
             this.manageOrdersLabel.TabIndex = 1;
             this.manageOrdersLabel.Text = "Manage Orders";
             // 
@@ -206,37 +252,6 @@
             this.dataGridViewOrder.Size = new System.Drawing.Size(816, 456);
             this.dataGridViewOrder.TabIndex = 7;
             this.dataGridViewOrder.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewOrder_CellContentClick);
-            // 
-            // dataGridViewCustomer
-            // 
-            this.dataGridViewCustomer.AllowUserToAddRows = false;
-            this.dataGridViewCustomer.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.PowderBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Sitka Banner", 10.2F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewCustomer.ColumnHeadersHeight = 29;
-            this.dataGridViewCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGridViewCustomer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.c0,
-            this.c1,
-            this.c2,
-            this.c3,
-            this.c4,
-            this.EditCustomer,
-            this.DeleteCustomer});
-            this.dataGridViewCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewCustomer.EnableHeadersVisualStyles = false;
-            this.dataGridViewCustomer.Location = new System.Drawing.Point(0, 0);
-            this.dataGridViewCustomer.Name = "dataGridViewCustomer";
-            this.dataGridViewCustomer.RowHeadersWidth = 51;
-            this.dataGridViewCustomer.RowTemplate.Height = 24;
-            this.dataGridViewCustomer.Size = new System.Drawing.Size(816, 456);
-            this.dataGridViewCustomer.TabIndex = 9;
             // 
             // Column0
             // 
@@ -331,6 +346,37 @@
             this.DeleteOrder.ReadOnly = true;
             this.DeleteOrder.Width = 25;
             // 
+            // dataGridViewCustomer
+            // 
+            this.dataGridViewCustomer.AllowUserToAddRows = false;
+            this.dataGridViewCustomer.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.PowderBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Sitka Banner", 10.2F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewCustomer.ColumnHeadersHeight = 29;
+            this.dataGridViewCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridViewCustomer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.c0,
+            this.c1,
+            this.c2,
+            this.c3,
+            this.c4,
+            this.EditCustomer,
+            this.DeleteCustomer});
+            this.dataGridViewCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewCustomer.EnableHeadersVisualStyles = false;
+            this.dataGridViewCustomer.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewCustomer.Name = "dataGridViewCustomer";
+            this.dataGridViewCustomer.RowHeadersWidth = 51;
+            this.dataGridViewCustomer.RowTemplate.Height = 24;
+            this.dataGridViewCustomer.Size = new System.Drawing.Size(816, 456);
+            this.dataGridViewCustomer.TabIndex = 9;
+            // 
             // OrdersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 24F);
@@ -381,5 +427,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewImageColumn EditOrder;
         private System.Windows.Forms.DataGridViewImageColumn DeleteOrder;
+        public System.Windows.Forms.Label numberOfOrdersLabel;
+        public System.Windows.Forms.Label numberOfOrders;
+        public System.Windows.Forms.Label totalPriceLabel;
+        public System.Windows.Forms.Label totalPrice;
     }
 }

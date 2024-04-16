@@ -146,6 +146,7 @@
             this.passwordTextbox.Name = "passwordTextbox";
             this.passwordTextbox.Size = new System.Drawing.Size(543, 22);
             this.passwordTextbox.TabIndex = 6;
+            this.passwordTextbox.UseSystemPasswordChar = true;
             this.passwordTextbox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // emailLabel
@@ -255,6 +256,7 @@
             this.repasswordTextbox.Name = "repasswordTextbox";
             this.repasswordTextbox.Size = new System.Drawing.Size(543, 22);
             this.repasswordTextbox.TabIndex = 15;
+            this.repasswordTextbox.UseSystemPasswordChar = true;
             // 
             // UserInfo
             // 

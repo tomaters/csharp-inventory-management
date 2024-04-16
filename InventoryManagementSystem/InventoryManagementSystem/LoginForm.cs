@@ -1,10 +1,14 @@
 ﻿using System;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace InventoryManagementSystem
 {
     public partial class LoginForm : Form
     {
+        SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\csharp\MS Database\dbms.mdf;Integrated Security = True; Connect Timeout = 30");
+        SqlCommand command = new SqlCommand();
+        SqlDataReader sqlDataReader;
         public LoginForm()
         {
             InitializeComponent();
@@ -27,7 +31,32 @@ namespace InventoryManagementSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
+            try
+            {
+                command = new SqlCommand("SELECT * FROM users WHERE username = @username AND password = @password", connection);
+                command.Parameters.AddWithValue("@username", usernameTextbox.Text);
+                command.Parameters.AddWithValue("@password", passwordTextbox.Text);
+                connection.Open();
+                sqlDataReader = command.ExecuteReader();
+                sqlDataReader.Read();
 
+                if (sqlDataReader.HasRows)
+                {
+                    MessageBox.Show("Welcome, " + sqlDataReader["fullname"].ToString() + "!", "Login success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MainForm mainForm = new MainForm();
+                    this.Hide();
+                    mainForm.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Login failed. Please try again.", "Login failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                connection.Close();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

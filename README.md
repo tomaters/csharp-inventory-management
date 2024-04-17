@@ -1,9 +1,5 @@
 Title: Inventory Management System 
 
-Start Date: 6 March 2024
-
-End date: (Ongoing)
-
 The purpose of this project is to learn about and familiarize myself with building an application using Visual Studio and coding in C#.
 
 It follows the guide for an Inventory Management System provided in the following link

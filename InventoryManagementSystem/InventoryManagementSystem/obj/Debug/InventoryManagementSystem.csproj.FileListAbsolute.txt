@@ -19,3 +19,4 @@ C:\csharp\projects\InventoryManagement\InventoryManagementSystem\InventoryManage
 C:\csharp\projects\InventoryManagement\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\InventoryManagementSystem.ProductsForm.resources
 C:\csharp\projects\InventoryManagement\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\InventoryManagementSystem.OrderInfo.resources
 C:\csharp\projects\InventoryManagement\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\InventoryManagementSystem.OrdersForm.resources
+C:\csharp\projects\InventoryManagement\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\InventoryManagementSystem.CreateAccountForm.resources

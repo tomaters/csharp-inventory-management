@@ -39,6 +39,7 @@
             this.passwordLabel = new System.Windows.Forms.Label();
             this.loginButton = new System.Windows.Forms.Button();
             this.rememberMeCheckbox = new System.Windows.Forms.CheckBox();
+            this.createAccountButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.folderIcon)).BeginInit();
@@ -150,13 +151,28 @@
             this.rememberMeCheckbox.TabIndex = 6;
             this.rememberMeCheckbox.Text = "Remember me";
             this.rememberMeCheckbox.UseVisualStyleBackColor = true;
+            this.rememberMeCheckbox.Visible = false;
             this.rememberMeCheckbox.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // createAccountButton
+            // 
+            this.createAccountButton.BackColor = System.Drawing.Color.PowderBlue;
+            this.createAccountButton.Font = new System.Drawing.Font("Sitka Banner", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.createAccountButton.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.createAccountButton.Location = new System.Drawing.Point(94, 306);
+            this.createAccountButton.Name = "createAccountButton";
+            this.createAccountButton.Size = new System.Drawing.Size(159, 39);
+            this.createAccountButton.TabIndex = 7;
+            this.createAccountButton.Text = "Create an account";
+            this.createAccountButton.UseVisualStyleBackColor = false;
+            this.createAccountButton.Click += new System.EventHandler(this.createAccountButton_Click);
             // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(349, 535);
+            this.Controls.Add(this.createAccountButton);
             this.Controls.Add(this.rememberMeCheckbox);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.passwordLabel);
@@ -190,6 +206,7 @@
         private System.Windows.Forms.PictureBox folderIcon;
         private System.Windows.Forms.CheckBox rememberMeCheckbox;
         private System.Windows.Forms.PictureBox exitButton;
+        private System.Windows.Forms.Button createAccountButton;
     }
 }
 

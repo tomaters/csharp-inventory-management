@@ -9,6 +9,21 @@ namespace InventoryManagementSystem
         SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\csharp\MS Database\dbms.mdf;Integrated Security = True; Connect Timeout = 30");
         SqlCommand command = new SqlCommand();
         SqlDataReader sqlDataReader;
+
+        private Form activeForm = null;
+
+        public void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+
+            activeForm = childForm;
+            childForm.TopLevel = true;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.BringToFront();
+            childForm.Show();
+
+        }
         public LoginForm()
         {
             InitializeComponent();
@@ -80,6 +95,11 @@ namespace InventoryManagementSystem
             {
                 Application.Exit();
             }
+        }
+
+        private void createAccountButton_Click(object sender, EventArgs e)
+        {
+            openChildForm(new CreateAccountForm());
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace InventoryManagementSystem
 {
     public partial class MainForm : Form
     {
+        public static string loggedUsername { get; private set; }
         // for subform (or childform) form in mainform
         private Form activeForm = null;
         public void openChildForm(Form childForm)
@@ -32,14 +34,15 @@ namespace InventoryManagementSystem
             childForm.BringToFront();
             childForm.Show();
         }
-        public MainForm()
+        public MainForm(String username)
         {
             InitializeComponent();
+            setUsername(username);
         }
 
-        private void panelMain_Paint(object sender, PaintEventArgs e)
+        public static void setUsername(String username)
         {
-
+            loggedUsername = username;
         }
        private void productsButton_Click(object sender, EventArgs e)
         {
@@ -62,7 +65,7 @@ namespace InventoryManagementSystem
 
         private void ordersButton_Click(object sender, EventArgs e)
         {
-            openChildForm(new OrdersForm());
+            openChildForm(new OrdersForm(loggedUsername));
         }
     }
 }

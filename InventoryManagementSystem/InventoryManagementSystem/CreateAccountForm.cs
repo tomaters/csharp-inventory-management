@@ -22,36 +22,6 @@ namespace InventoryManagementSystem
             InitializeComponent();
         }
 
-        private void CreateAccountForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panelFooter_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void repasswordTextbox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void updateUserInfoButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void fullnameTextbox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void fullnameLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void clearUserInfoButton_Click(object sender, EventArgs e)
         {
             Clear();
@@ -124,36 +94,6 @@ namespace InventoryManagementSystem
             }
         }
 
-        private void phoneLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void phoneTextbox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void emailLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void emailTextbox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void passwordLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void usernameLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void usernameTextbox_TextChanged(object sender, EventArgs e)
         {
             // if textbox is not empty, display availabity status
@@ -178,21 +118,33 @@ namespace InventoryManagementSystem
                 }
         }
 
-        private void repasswordLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panelHeader_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void passwordTextbox_TextChanged(object sender, EventArgs e)
         {
-
+            if(passwordTextbox.Text != "" &&  passwordTextbox.Text != repasswordTextbox.Text)
+            {
+                passwordMatchingLabel.Visible = true;
+                passwordMatchingLabel.ForeColor = Color.Red;
+                passwordMatchingLabel.Text = "Passwords do not match!";
+            }
+            else
+            {
+                passwordMatchingLabel.Visible = false;
+            }
         }
 
+        private void repasswordTextbox_TextChanged(object sender, EventArgs e)
+        {
+            if (repasswordTextbox.Text != "" && passwordTextbox.Text != repasswordTextbox.Text)
+            {
+                passwordMatchingLabel.Visible = true;
+                passwordMatchingLabel.ForeColor = Color.Red;
+                passwordMatchingLabel.Text = "Passwords do not match!";
+            }
+            else
+            {
+                passwordMatchingLabel.Visible = false;
+            }
+        }
         private void exitButton_Click_1(object sender, EventArgs e)
         {
             this.Dispose();

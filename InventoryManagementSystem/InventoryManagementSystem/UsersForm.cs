@@ -50,21 +50,6 @@ namespace InventoryManagementSystem
                 connection.Close();
             }
         }
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void title_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void dataGridViewUser_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             string colName = dataGridViewUser.Columns[e.ColumnIndex].Name;
@@ -100,17 +85,6 @@ namespace InventoryManagementSystem
             }
             LoadUsers();
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             UserInfo userInfoForm = new UserInfo();
@@ -119,11 +93,6 @@ namespace InventoryManagementSystem
             userInfoForm.ShowDialog();
             LoadUsers();
         }
-        private void panelFooter_Paint(object sender, PaintEventArgs e)
-        {
- 
-        }
-
         private void searchUserTextbox_TextChanged(object sender, EventArgs e)
         {
             LoadUsers();

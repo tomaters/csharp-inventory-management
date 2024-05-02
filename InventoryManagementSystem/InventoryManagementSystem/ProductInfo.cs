@@ -35,11 +35,6 @@ namespace InventoryManagementSystem
             sqlDataReader.Close();
             connection.Close();
         }
-        private void usernameTextbox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void exitButton_Click(object sender, EventArgs e)
         {
             this.Dispose();

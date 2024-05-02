@@ -59,7 +59,6 @@
             this.panelFooter.Name = "panelFooter";
             this.panelFooter.Size = new System.Drawing.Size(816, 41);
             this.panelFooter.TabIndex = 2;
-            this.panelFooter.Paint += new System.Windows.Forms.PaintEventHandler(this.panelFooter_Paint);
             // 
             // addUserButton
             // 
@@ -80,7 +79,6 @@
             this.manageUsersLabel.Size = new System.Drawing.Size(100, 24);
             this.manageUsersLabel.TabIndex = 1;
             this.manageUsersLabel.Text = "Manage Users";
-            this.manageUsersLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // dataGridViewUser
             // 

@@ -20,27 +20,6 @@ namespace InventoryManagementSystem
         {
             InitializeComponent();
         }
-
-        private void title_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void exitButton_Click(object sender, EventArgs e)
         {
             this.Dispose();
@@ -98,11 +77,6 @@ namespace InventoryManagementSystem
             phoneTextbox.Clear();
         }
 
-        private void usernameLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void updateUserInfoButton_Click(object sender, EventArgs e)
         {
             try
@@ -134,11 +108,6 @@ namespace InventoryManagementSystem
             {
                 MessageBox.Show(ex.Message);
             }
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

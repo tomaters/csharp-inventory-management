@@ -140,7 +140,6 @@
             this.panelFooter.Name = "panelFooter";
             this.panelFooter.Size = new System.Drawing.Size(816, 88);
             this.panelFooter.TabIndex = 8;
-            this.panelFooter.Paint += new System.Windows.Forms.PaintEventHandler(this.panelFooter_Paint);
             // 
             // totalPrice
             // 

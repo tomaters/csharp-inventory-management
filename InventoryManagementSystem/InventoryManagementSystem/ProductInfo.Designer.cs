@@ -69,7 +69,7 @@
             this.productDescriptionTextbox.Location = new System.Drawing.Point(203, 222);
             this.productDescriptionTextbox.Name = "productDescriptionTextbox";
             this.productDescriptionTextbox.Size = new System.Drawing.Size(543, 29);
-            this.productDescriptionTextbox.TabIndex = 32;
+            this.productDescriptionTextbox.TabIndex = 4;
             // 
             // updateProductInfoButton
             // 
@@ -79,7 +79,7 @@
             this.updateProductInfoButton.Location = new System.Drawing.Point(496, 315);
             this.updateProductInfoButton.Name = "updateProductInfoButton";
             this.updateProductInfoButton.Size = new System.Drawing.Size(122, 39);
-            this.updateProductInfoButton.TabIndex = 30;
+            this.updateProductInfoButton.TabIndex = 7;
             this.updateProductInfoButton.Text = "Update";
             this.updateProductInfoButton.UseVisualStyleBackColor = false;
             this.updateProductInfoButton.Click += new System.EventHandler(this.updateUserInfoButton_Click);
@@ -89,7 +89,7 @@
             this.productQuantityTextbox.Location = new System.Drawing.Point(203, 138);
             this.productQuantityTextbox.Name = "productQuantityTextbox";
             this.productQuantityTextbox.Size = new System.Drawing.Size(543, 29);
-            this.productQuantityTextbox.TabIndex = 21;
+            this.productQuantityTextbox.TabIndex = 2;
             // 
             // quantityLabel
             // 
@@ -109,7 +109,7 @@
             this.clearProductInfoButton.Location = new System.Drawing.Point(368, 315);
             this.clearProductInfoButton.Name = "clearProductInfoButton";
             this.clearProductInfoButton.Size = new System.Drawing.Size(122, 39);
-            this.clearProductInfoButton.TabIndex = 28;
+            this.clearProductInfoButton.TabIndex = 6;
             this.clearProductInfoButton.Text = "Clear";
             this.clearProductInfoButton.UseVisualStyleBackColor = false;
             this.clearProductInfoButton.Click += new System.EventHandler(this.clearUserInfoButton_Click);
@@ -122,7 +122,7 @@
             this.saveProductInfoButton.Location = new System.Drawing.Point(624, 315);
             this.saveProductInfoButton.Name = "saveProductInfoButton";
             this.saveProductInfoButton.Size = new System.Drawing.Size(122, 39);
-            this.saveProductInfoButton.TabIndex = 29;
+            this.saveProductInfoButton.TabIndex = 8;
             this.saveProductInfoButton.Text = "Save";
             this.saveProductInfoButton.UseVisualStyleBackColor = false;
             this.saveProductInfoButton.Click += new System.EventHandler(this.saveUserInfoButton_Click);
@@ -171,8 +171,7 @@
             this.productNameTextbox.Location = new System.Drawing.Point(203, 96);
             this.productNameTextbox.Name = "productNameTextbox";
             this.productNameTextbox.Size = new System.Drawing.Size(543, 29);
-            this.productNameTextbox.TabIndex = 18;
-            this.productNameTextbox.TextChanged += new System.EventHandler(this.usernameTextbox_TextChanged);
+            this.productNameTextbox.TabIndex = 1;
             // 
             // panelFooter
             // 
@@ -235,7 +234,7 @@
             this.productPriceTextbox.Location = new System.Drawing.Point(203, 180);
             this.productPriceTextbox.Name = "productPriceTextbox";
             this.productPriceTextbox.Size = new System.Drawing.Size(543, 29);
-            this.productPriceTextbox.TabIndex = 23;
+            this.productPriceTextbox.TabIndex = 3;
             // 
             // productIdLabel
             // 
@@ -245,7 +244,7 @@
             this.productIdLabel.Location = new System.Drawing.Point(29, 325);
             this.productIdLabel.Name = "productIdLabel";
             this.productIdLabel.Size = new System.Drawing.Size(96, 29);
-            this.productIdLabel.TabIndex = 33;
+            this.productIdLabel.TabIndex = 9;
             this.productIdLabel.Text = "Product ID";
             this.productIdLabel.Visible = false;
             // 
@@ -256,7 +255,7 @@
             this.productCategoryComboBox.Location = new System.Drawing.Point(203, 264);
             this.productCategoryComboBox.Name = "productCategoryComboBox";
             this.productCategoryComboBox.Size = new System.Drawing.Size(543, 32);
-            this.productCategoryComboBox.TabIndex = 34;
+            this.productCategoryComboBox.TabIndex = 5;
             // 
             // ProductInfo
             // 

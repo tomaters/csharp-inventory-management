@@ -76,22 +76,6 @@ namespace InventoryManagementSystem
             LoadCustomers();
             LoadProducts();
         }
-
-        private void OrderInfo_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void productsButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void searchProductTextbox_TextChanged(object sender, EventArgs e)
         {
             LoadProducts();
@@ -105,16 +89,6 @@ namespace InventoryManagementSystem
         private void exitButton_Click(object sender, EventArgs e)
         {
             this.Dispose();
-        }
-
-        private void exitButton_Click_1(object sender, EventArgs e)
-        {
-            this.Dispose();
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
         }
         // CellClick, not CellContentClick to apply inputs if anywhere in the cell is clicked
         private void dataGridViewCustomer_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -166,12 +140,6 @@ namespace InventoryManagementSystem
             quantityUpDown.ResetText();
             orderDatePicker.ResetText();
         }
-
-        private void totalTextbox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void saveOrderInfoButton_Click(object sender, EventArgs e)
         {
             try

@@ -90,7 +90,6 @@
             this.categoryInformationLabel.Size = new System.Drawing.Size(204, 48);
             this.categoryInformationLabel.TabIndex = 7;
             this.categoryInformationLabel.Text = "Category Information";
-            this.categoryInformationLabel.Click += new System.EventHandler(this.categoryInformationLabel_Click);
             // 
             // categoryIdLabel
             // 
@@ -188,7 +187,6 @@
             this.Name = "CategoryInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CategoryInfo";
-            this.Load += new System.EventHandler(this.CategoryInfo_Load);
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).EndInit();

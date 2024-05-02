@@ -20,11 +20,6 @@ namespace InventoryManagementSystem
             InitializeComponent();
         }
 
-        private void categoryInformationLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void saveCategoryInfoButton_Click(object sender, EventArgs e)
         {
             try
@@ -50,11 +45,6 @@ namespace InventoryManagementSystem
         private void exitButton_Click(object sender, EventArgs e)
         {
             this.Dispose();
-        }
-
-        private void CategoryInfo_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void updateCategoryInfoButton_Click(object sender, EventArgs e)

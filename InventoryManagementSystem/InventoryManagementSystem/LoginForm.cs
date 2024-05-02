@@ -58,7 +58,7 @@ namespace InventoryManagementSystem
                 if (sqlDataReader.HasRows)
                 {
                     MessageBox.Show("Welcome, " + sqlDataReader["fullname"].ToString() + "!", "Login success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    MainForm mainForm = new MainForm();
+                    MainForm mainForm = new MainForm(usernameTextbox.Text);
                     this.Hide();
                     mainForm.ShowDialog();
                 }

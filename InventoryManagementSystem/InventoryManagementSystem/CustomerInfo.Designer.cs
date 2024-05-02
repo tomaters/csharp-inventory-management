@@ -104,7 +104,7 @@
             this.updateCustomerInfoButton.Location = new System.Drawing.Point(482, 228);
             this.updateCustomerInfoButton.Name = "updateCustomerInfoButton";
             this.updateCustomerInfoButton.Size = new System.Drawing.Size(122, 39);
-            this.updateCustomerInfoButton.TabIndex = 29;
+            this.updateCustomerInfoButton.TabIndex = 5;
             this.updateCustomerInfoButton.Text = "Update";
             this.updateCustomerInfoButton.UseVisualStyleBackColor = false;
             this.updateCustomerInfoButton.Click += new System.EventHandler(this.updateCustomerInfoButton_Click);
@@ -114,7 +114,7 @@
             this.nameTextbox.Location = new System.Drawing.Point(189, 100);
             this.nameTextbox.Name = "nameTextbox";
             this.nameTextbox.Size = new System.Drawing.Size(543, 22);
-            this.nameTextbox.TabIndex = 20;
+            this.nameTextbox.TabIndex = 1;
             // 
             // nameLabel
             // 
@@ -134,7 +134,7 @@
             this.clearCustomerInfoButton.Location = new System.Drawing.Point(354, 228);
             this.clearCustomerInfoButton.Name = "clearCustomerInfoButton";
             this.clearCustomerInfoButton.Size = new System.Drawing.Size(122, 39);
-            this.clearCustomerInfoButton.TabIndex = 27;
+            this.clearCustomerInfoButton.TabIndex = 4;
             this.clearCustomerInfoButton.Text = "Clear";
             this.clearCustomerInfoButton.UseVisualStyleBackColor = false;
             this.clearCustomerInfoButton.Click += new System.EventHandler(this.clearCustomerInfoButton_Click);
@@ -147,7 +147,7 @@
             this.saveCustomerInfoButton.Location = new System.Drawing.Point(610, 228);
             this.saveCustomerInfoButton.Name = "saveCustomerInfoButton";
             this.saveCustomerInfoButton.Size = new System.Drawing.Size(122, 39);
-            this.saveCustomerInfoButton.TabIndex = 28;
+            this.saveCustomerInfoButton.TabIndex = 6;
             this.saveCustomerInfoButton.Text = "Save";
             this.saveCustomerInfoButton.UseVisualStyleBackColor = false;
             this.saveCustomerInfoButton.Click += new System.EventHandler(this.saveCustomerInfoButton_Click);
@@ -167,7 +167,7 @@
             this.phoneTextbox.Location = new System.Drawing.Point(189, 182);
             this.phoneTextbox.Name = "phoneTextbox";
             this.phoneTextbox.Size = new System.Drawing.Size(543, 22);
-            this.phoneTextbox.TabIndex = 26;
+            this.phoneTextbox.TabIndex = 3;
             // 
             // emailLabel
             // 
@@ -184,7 +184,7 @@
             this.emailTextbox.Location = new System.Drawing.Point(189, 142);
             this.emailTextbox.Name = "emailTextbox";
             this.emailTextbox.Size = new System.Drawing.Size(543, 22);
-            this.emailTextbox.TabIndex = 24;
+            this.emailTextbox.TabIndex = 2;
             // 
             // panelFooter
             // 
@@ -206,7 +206,6 @@
             this.customerIdLabel.TabIndex = 30;
             this.customerIdLabel.Text = "Customer ID";
             this.customerIdLabel.Visible = false;
-            this.customerIdLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // CustomerInfo
             // 

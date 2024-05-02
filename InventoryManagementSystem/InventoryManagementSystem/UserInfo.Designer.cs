@@ -66,7 +66,6 @@
             this.userInformationLabel.Size = new System.Drawing.Size(165, 48);
             this.userInformationLabel.TabIndex = 7;
             this.userInformationLabel.Text = "User Information";
-            this.userInformationLabel.Click += new System.EventHandler(this.title_Click);
             // 
             // folderIcon
             // 
@@ -116,8 +115,7 @@
             this.usernameTextbox.Location = new System.Drawing.Point(215, 101);
             this.usernameTextbox.Name = "usernameTextbox";
             this.usernameTextbox.Size = new System.Drawing.Size(543, 22);
-            this.usernameTextbox.TabIndex = 2;
-            this.usernameTextbox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.usernameTextbox.TabIndex = 1;
             // 
             // usernameLabel
             // 
@@ -128,7 +126,6 @@
             this.usernameLabel.Size = new System.Drawing.Size(89, 29);
             this.usernameLabel.TabIndex = 1;
             this.usernameLabel.Text = "Username";
-            this.usernameLabel.Click += new System.EventHandler(this.usernameLabel_Click);
             // 
             // passwordLabel
             // 
@@ -145,9 +142,8 @@
             this.passwordTextbox.Location = new System.Drawing.Point(215, 186);
             this.passwordTextbox.Name = "passwordTextbox";
             this.passwordTextbox.Size = new System.Drawing.Size(543, 22);
-            this.passwordTextbox.TabIndex = 6;
+            this.passwordTextbox.TabIndex = 3;
             this.passwordTextbox.UseSystemPasswordChar = true;
-            this.passwordTextbox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // emailLabel
             // 
@@ -164,7 +160,7 @@
             this.emailTextbox.Location = new System.Drawing.Point(215, 268);
             this.emailTextbox.Name = "emailTextbox";
             this.emailTextbox.Size = new System.Drawing.Size(543, 22);
-            this.emailTextbox.TabIndex = 8;
+            this.emailTextbox.TabIndex = 5;
             // 
             // phoneLabel
             // 
@@ -181,7 +177,7 @@
             this.phoneTextbox.Location = new System.Drawing.Point(215, 308);
             this.phoneTextbox.Name = "phoneTextbox";
             this.phoneTextbox.Size = new System.Drawing.Size(543, 22);
-            this.phoneTextbox.TabIndex = 10;
+            this.phoneTextbox.TabIndex = 6;
             // 
             // saveUserInfoButton
             // 
@@ -191,7 +187,7 @@
             this.saveUserInfoButton.Location = new System.Drawing.Point(624, 348);
             this.saveUserInfoButton.Name = "saveUserInfoButton";
             this.saveUserInfoButton.Size = new System.Drawing.Size(122, 39);
-            this.saveUserInfoButton.TabIndex = 12;
+            this.saveUserInfoButton.TabIndex = 9;
             this.saveUserInfoButton.Text = "Save";
             this.saveUserInfoButton.UseVisualStyleBackColor = false;
             this.saveUserInfoButton.Click += new System.EventHandler(this.saveUserInfoButton_Click);
@@ -204,7 +200,7 @@
             this.clearUserInfoButton.Location = new System.Drawing.Point(368, 348);
             this.clearUserInfoButton.Name = "clearUserInfoButton";
             this.clearUserInfoButton.Size = new System.Drawing.Size(122, 39);
-            this.clearUserInfoButton.TabIndex = 11;
+            this.clearUserInfoButton.TabIndex = 7;
             this.clearUserInfoButton.Text = "Clear";
             this.clearUserInfoButton.UseVisualStyleBackColor = false;
             this.clearUserInfoButton.Click += new System.EventHandler(this.clearUserInfoButton_Click);
@@ -224,7 +220,7 @@
             this.fullnameTextbox.Location = new System.Drawing.Point(215, 147);
             this.fullnameTextbox.Name = "fullnameTextbox";
             this.fullnameTextbox.Size = new System.Drawing.Size(543, 22);
-            this.fullnameTextbox.TabIndex = 4;
+            this.fullnameTextbox.TabIndex = 2;
             // 
             // updateUserInfoButton
             // 
@@ -234,7 +230,7 @@
             this.updateUserInfoButton.Location = new System.Drawing.Point(496, 348);
             this.updateUserInfoButton.Name = "updateUserInfoButton";
             this.updateUserInfoButton.Size = new System.Drawing.Size(122, 39);
-            this.updateUserInfoButton.TabIndex = 13;
+            this.updateUserInfoButton.TabIndex = 8;
             this.updateUserInfoButton.Text = "Update";
             this.updateUserInfoButton.UseVisualStyleBackColor = false;
             this.updateUserInfoButton.Click += new System.EventHandler(this.updateUserInfoButton_Click);
@@ -248,14 +244,13 @@
             this.repasswordLabel.Size = new System.Drawing.Size(155, 29);
             this.repasswordLabel.TabIndex = 14;
             this.repasswordLabel.Text = "Re-enter password";
-            this.repasswordLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // repasswordTextbox
             // 
             this.repasswordTextbox.Location = new System.Drawing.Point(215, 230);
             this.repasswordTextbox.Name = "repasswordTextbox";
             this.repasswordTextbox.Size = new System.Drawing.Size(543, 22);
-            this.repasswordTextbox.TabIndex = 15;
+            this.repasswordTextbox.TabIndex = 4;
             this.repasswordTextbox.UseSystemPasswordChar = true;
             // 
             // UserInfo

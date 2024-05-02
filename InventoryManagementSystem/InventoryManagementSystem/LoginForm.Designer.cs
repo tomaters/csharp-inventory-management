@@ -137,7 +137,7 @@
             this.loginButton.Location = new System.Drawing.Point(94, 261);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(159, 39);
-            this.loginButton.TabIndex = 5;
+            this.loginButton.TabIndex = 3;
             this.loginButton.Text = "Log in";
             this.loginButton.UseVisualStyleBackColor = false;
             this.loginButton.Click += new System.EventHandler(this.button1_Click);
@@ -148,7 +148,8 @@
             this.rememberMeCheckbox.Location = new System.Drawing.Point(197, 233);
             this.rememberMeCheckbox.Name = "rememberMeCheckbox";
             this.rememberMeCheckbox.Size = new System.Drawing.Size(119, 20);
-            this.rememberMeCheckbox.TabIndex = 6;
+            this.rememberMeCheckbox.TabIndex = 10;
+            this.rememberMeCheckbox.TabStop = false;
             this.rememberMeCheckbox.Text = "Remember me";
             this.rememberMeCheckbox.UseVisualStyleBackColor = true;
             this.rememberMeCheckbox.Visible = false;
@@ -162,7 +163,7 @@
             this.createAccountButton.Location = new System.Drawing.Point(94, 306);
             this.createAccountButton.Name = "createAccountButton";
             this.createAccountButton.Size = new System.Drawing.Size(159, 39);
-            this.createAccountButton.TabIndex = 7;
+            this.createAccountButton.TabIndex = 4;
             this.createAccountButton.Text = "Create an account";
             this.createAccountButton.UseVisualStyleBackColor = false;
             this.createAccountButton.Click += new System.EventHandler(this.createAccountButton_Click);

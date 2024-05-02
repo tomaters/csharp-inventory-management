@@ -92,10 +92,5 @@ namespace InventoryManagementSystem
         {
             LoadProducts();
         }
-
-        private void panelFooter_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

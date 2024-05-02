@@ -105,7 +105,7 @@
             this.exitButton.Size = new System.Drawing.Size(23, 20);
             this.exitButton.TabIndex = 9;
             this.exitButton.TabStop = false;
-            this.exitButton.Click += new System.EventHandler(this.exitButton_Click_1);
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // folderIcon
             // 
@@ -303,7 +303,7 @@
             this.customerNameTextbox.ReadOnly = true;
             this.customerNameTextbox.Size = new System.Drawing.Size(169, 29);
             this.customerNameTextbox.TabIndex = 39;
-            this.customerNameTextbox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.customerNameTextbox.TabStop = false;
             // 
             // customerNameLabel
             // 
@@ -321,6 +321,7 @@
             this.customerIdTextbox.ReadOnly = true;
             this.customerIdTextbox.Size = new System.Drawing.Size(169, 29);
             this.customerIdTextbox.TabIndex = 37;
+            this.customerIdTextbox.TabStop = false;
             // 
             // customerIdLabel
             // 
@@ -336,7 +337,7 @@
             this.searchCustomerTextbox.Location = new System.Drawing.Point(132, 221);
             this.searchCustomerTextbox.Name = "searchCustomerTextbox";
             this.searchCustomerTextbox.Size = new System.Drawing.Size(169, 29);
-            this.searchCustomerTextbox.TabIndex = 35;
+            this.searchCustomerTextbox.TabIndex = 1;
             this.searchCustomerTextbox.TextChanged += new System.EventHandler(this.searchCustomerTextbox_TextChanged);
             // 
             // searchCustomerLabel
@@ -357,7 +358,6 @@
             this.customerLabel.Size = new System.Drawing.Size(83, 28);
             this.customerLabel.TabIndex = 34;
             this.customerLabel.Text = "Customer";
-            this.customerLabel.Click += new System.EventHandler(this.productsButton_Click);
             // 
             // panel2
             // 
@@ -385,7 +385,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(634, 453);
             this.panel2.TabIndex = 36;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // quantityUpDown
             // 
@@ -397,7 +396,7 @@
             0});
             this.quantityUpDown.Name = "quantityUpDown";
             this.quantityUpDown.Size = new System.Drawing.Size(169, 29);
-            this.quantityUpDown.TabIndex = 56;
+            this.quantityUpDown.TabIndex = 4;
             this.quantityUpDown.ValueChanged += new System.EventHandler(this.quantityUpDown_ValueChanged);
             // 
             // updateOrderInfoButton
@@ -408,7 +407,7 @@
             this.updateOrderInfoButton.Location = new System.Drawing.Point(361, 406);
             this.updateOrderInfoButton.Name = "updateOrderInfoButton";
             this.updateOrderInfoButton.Size = new System.Drawing.Size(122, 39);
-            this.updateOrderInfoButton.TabIndex = 55;
+            this.updateOrderInfoButton.TabIndex = 6;
             this.updateOrderInfoButton.Text = "Update";
             this.updateOrderInfoButton.UseVisualStyleBackColor = false;
             this.updateOrderInfoButton.Click += new System.EventHandler(this.updateOrderInfoButton_Click);
@@ -421,7 +420,7 @@
             this.clearOrderInfoButton.Location = new System.Drawing.Point(233, 406);
             this.clearOrderInfoButton.Name = "clearOrderInfoButton";
             this.clearOrderInfoButton.Size = new System.Drawing.Size(122, 39);
-            this.clearOrderInfoButton.TabIndex = 53;
+            this.clearOrderInfoButton.TabIndex = 5;
             this.clearOrderInfoButton.Text = "Clear";
             this.clearOrderInfoButton.UseVisualStyleBackColor = false;
             this.clearOrderInfoButton.Click += new System.EventHandler(this.clearOrderInfoButton_Click);
@@ -434,7 +433,7 @@
             this.saveOrderInfoButton.Location = new System.Drawing.Point(489, 406);
             this.saveOrderInfoButton.Name = "saveOrderInfoButton";
             this.saveOrderInfoButton.Size = new System.Drawing.Size(122, 39);
-            this.saveOrderInfoButton.TabIndex = 54;
+            this.saveOrderInfoButton.TabIndex = 7;
             this.saveOrderInfoButton.Text = "Save";
             this.saveOrderInfoButton.UseVisualStyleBackColor = false;
             this.saveOrderInfoButton.Click += new System.EventHandler(this.saveOrderInfoButton_Click);
@@ -444,7 +443,7 @@
             this.orderDatePicker.Location = new System.Drawing.Point(120, 362);
             this.orderDatePicker.Name = "orderDatePicker";
             this.orderDatePicker.Size = new System.Drawing.Size(219, 29);
-            this.orderDatePicker.TabIndex = 52;
+            this.orderDatePicker.TabIndex = 3;
             // 
             // orderDateLabel
             // 
@@ -462,7 +461,7 @@
             this.totalTextbox.ReadOnly = true;
             this.totalTextbox.Size = new System.Drawing.Size(169, 29);
             this.totalTextbox.TabIndex = 49;
-            this.totalTextbox.TextChanged += new System.EventHandler(this.totalTextbox_TextChanged);
+            this.totalTextbox.TabStop = false;
             // 
             // totalLabel
             // 
@@ -489,6 +488,7 @@
             this.priceTextbox.ReadOnly = true;
             this.priceTextbox.Size = new System.Drawing.Size(169, 29);
             this.priceTextbox.TabIndex = 45;
+            this.priceTextbox.TabStop = false;
             // 
             // priceLabel
             // 
@@ -506,6 +506,7 @@
             this.productNameTextbox.ReadOnly = true;
             this.productNameTextbox.Size = new System.Drawing.Size(219, 29);
             this.productNameTextbox.TabIndex = 43;
+            this.productNameTextbox.TabStop = false;
             // 
             // productNameLabel
             // 
@@ -518,11 +519,12 @@
             // 
             // productIdTextbox
             // 
-            this.productIdTextbox.Location = new System.Drawing.Point(120, 291);
+            this.productIdTextbox.Location = new System.Drawing.Point(120, 292);
             this.productIdTextbox.Name = "productIdTextbox";
             this.productIdTextbox.ReadOnly = true;
             this.productIdTextbox.Size = new System.Drawing.Size(219, 29);
             this.productIdTextbox.TabIndex = 41;
+            this.productIdTextbox.TabStop = false;
             // 
             // productIdLabel
             // 
@@ -538,7 +540,7 @@
             this.searchProductTextbox.Location = new System.Drawing.Point(247, 221);
             this.searchProductTextbox.Name = "searchProductTextbox";
             this.searchProductTextbox.Size = new System.Drawing.Size(364, 29);
-            this.searchProductTextbox.TabIndex = 37;
+            this.searchProductTextbox.TabIndex = 2;
             this.searchProductTextbox.TextChanged += new System.EventHandler(this.searchProductTextbox_TextChanged);
             // 
             // searchProductLabel
@@ -575,7 +577,6 @@
             this.Name = "OrderInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OrderInfo";
-            this.Load += new System.EventHandler(this.OrderInfo_Load);
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).EndInit();

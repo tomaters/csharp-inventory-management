@@ -49,6 +49,7 @@
             this.passwordTextbox = new System.Windows.Forms.TextBox();
             this.clearUserInfoButton = new System.Windows.Forms.Button();
             this.availabilityLabel = new System.Windows.Forms.Label();
+            this.passwordMatchingLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).BeginInit();
             this.panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.folderIcon)).BeginInit();
@@ -63,14 +64,13 @@
             this.repasswordLabel.Size = new System.Drawing.Size(155, 29);
             this.repasswordLabel.TabIndex = 31;
             this.repasswordLabel.Text = "Re-enter password";
-            this.repasswordLabel.Click += new System.EventHandler(this.repasswordLabel_Click);
             // 
             // repasswordTextbox
             // 
             this.repasswordTextbox.Location = new System.Drawing.Point(215, 203);
             this.repasswordTextbox.Name = "repasswordTextbox";
             this.repasswordTextbox.Size = new System.Drawing.Size(543, 22);
-            this.repasswordTextbox.TabIndex = 32;
+            this.repasswordTextbox.TabIndex = 3;
             this.repasswordTextbox.UseSystemPasswordChar = true;
             this.repasswordTextbox.TextChanged += new System.EventHandler(this.repasswordTextbox_TextChanged);
             // 
@@ -79,8 +79,7 @@
             this.fullnameTextbox.Location = new System.Drawing.Point(215, 259);
             this.fullnameTextbox.Name = "fullnameTextbox";
             this.fullnameTextbox.Size = new System.Drawing.Size(543, 22);
-            this.fullnameTextbox.TabIndex = 21;
-            this.fullnameTextbox.TextChanged += new System.EventHandler(this.fullnameTextbox_TextChanged);
+            this.fullnameTextbox.TabIndex = 4;
             // 
             // fullnameLabel
             // 
@@ -91,7 +90,6 @@
             this.fullnameLabel.Size = new System.Drawing.Size(90, 29);
             this.fullnameLabel.TabIndex = 19;
             this.fullnameLabel.Text = "Full name";
-            this.fullnameLabel.Click += new System.EventHandler(this.fullnameLabel_Click);
             // 
             // createAccountButton
             // 
@@ -102,7 +100,7 @@
             this.createAccountButton.Location = new System.Drawing.Point(624, 375);
             this.createAccountButton.Name = "createAccountButton";
             this.createAccountButton.Size = new System.Drawing.Size(122, 39);
-            this.createAccountButton.TabIndex = 29;
+            this.createAccountButton.TabIndex = 8;
             this.createAccountButton.Text = "Create account";
             this.createAccountButton.UseVisualStyleBackColor = false;
             this.createAccountButton.Click += new System.EventHandler(this.saveUserInfoButton_Click);
@@ -116,15 +114,13 @@
             this.phoneLabel.Size = new System.Drawing.Size(60, 29);
             this.phoneLabel.TabIndex = 26;
             this.phoneLabel.Text = "Phone\r\n";
-            this.phoneLabel.Click += new System.EventHandler(this.phoneLabel_Click);
             // 
             // phoneTextbox
             // 
             this.phoneTextbox.Location = new System.Drawing.Point(215, 335);
             this.phoneTextbox.Name = "phoneTextbox";
             this.phoneTextbox.Size = new System.Drawing.Size(543, 22);
-            this.phoneTextbox.TabIndex = 27;
-            this.phoneTextbox.TextChanged += new System.EventHandler(this.phoneTextbox_TextChanged);
+            this.phoneTextbox.TabIndex = 6;
             // 
             // emailLabel
             // 
@@ -135,15 +131,13 @@
             this.emailLabel.Size = new System.Drawing.Size(58, 29);
             this.emailLabel.TabIndex = 24;
             this.emailLabel.Text = "Email\r\n";
-            this.emailLabel.Click += new System.EventHandler(this.emailLabel_Click);
             // 
             // emailTextbox
             // 
             this.emailTextbox.Location = new System.Drawing.Point(215, 295);
             this.emailTextbox.Name = "emailTextbox";
             this.emailTextbox.Size = new System.Drawing.Size(543, 22);
-            this.emailTextbox.TabIndex = 25;
-            this.emailTextbox.TextChanged += new System.EventHandler(this.emailTextbox_TextChanged);
+            this.emailTextbox.TabIndex = 5;
             // 
             // passwordLabel
             // 
@@ -154,7 +148,6 @@
             this.passwordLabel.Size = new System.Drawing.Size(86, 29);
             this.passwordLabel.TabIndex = 22;
             this.passwordLabel.Text = "Password\r\n";
-            this.passwordLabel.Click += new System.EventHandler(this.passwordLabel_Click);
             // 
             // usernameLabel
             // 
@@ -165,14 +158,13 @@
             this.usernameLabel.Size = new System.Drawing.Size(89, 29);
             this.usernameLabel.TabIndex = 16;
             this.usernameLabel.Text = "Username";
-            this.usernameLabel.Click += new System.EventHandler(this.usernameLabel_Click);
             // 
             // usernameTextbox
             // 
             this.usernameTextbox.Location = new System.Drawing.Point(215, 110);
             this.usernameTextbox.Name = "usernameTextbox";
             this.usernameTextbox.Size = new System.Drawing.Size(543, 22);
-            this.usernameTextbox.TabIndex = 18;
+            this.usernameTextbox.TabIndex = 1;
             this.usernameTextbox.TextChanged += new System.EventHandler(this.usernameTextbox_TextChanged);
             // 
             // panelFooter
@@ -183,7 +175,6 @@
             this.panelFooter.Name = "panelFooter";
             this.panelFooter.Size = new System.Drawing.Size(800, 22);
             this.panelFooter.TabIndex = 17;
-            this.panelFooter.Paint += new System.Windows.Forms.PaintEventHandler(this.panelFooter_Paint);
             // 
             // exitButton
             // 
@@ -207,7 +198,6 @@
             this.panelHeader.Name = "panelHeader";
             this.panelHeader.Size = new System.Drawing.Size(800, 66);
             this.panelHeader.TabIndex = 20;
-            this.panelHeader.Paint += new System.Windows.Forms.PaintEventHandler(this.panelHeader_Paint);
             // 
             // folderIcon
             // 
@@ -239,7 +229,7 @@
             this.passwordTextbox.Location = new System.Drawing.Point(215, 165);
             this.passwordTextbox.Name = "passwordTextbox";
             this.passwordTextbox.Size = new System.Drawing.Size(543, 22);
-            this.passwordTextbox.TabIndex = 23;
+            this.passwordTextbox.TabIndex = 2;
             this.passwordTextbox.UseSystemPasswordChar = true;
             this.passwordTextbox.TextChanged += new System.EventHandler(this.passwordTextbox_TextChanged);
             // 
@@ -252,7 +242,7 @@
             this.clearUserInfoButton.Location = new System.Drawing.Point(483, 375);
             this.clearUserInfoButton.Name = "clearUserInfoButton";
             this.clearUserInfoButton.Size = new System.Drawing.Size(122, 39);
-            this.clearUserInfoButton.TabIndex = 28;
+            this.clearUserInfoButton.TabIndex = 7;
             this.clearUserInfoButton.Text = "Clear";
             this.clearUserInfoButton.UseVisualStyleBackColor = false;
             this.clearUserInfoButton.Click += new System.EventHandler(this.clearUserInfoButton_Click);
@@ -268,11 +258,23 @@
             this.availabilityLabel.Text = "Availability Label";
             this.availabilityLabel.Visible = false;
             // 
+            // passwordMatchingLabel
+            // 
+            this.passwordMatchingLabel.AutoSize = true;
+            this.passwordMatchingLabel.Font = new System.Drawing.Font("Sitka Banner", 9F);
+            this.passwordMatchingLabel.Location = new System.Drawing.Point(214, 141);
+            this.passwordMatchingLabel.Name = "passwordMatchingLabel";
+            this.passwordMatchingLabel.Size = new System.Drawing.Size(151, 21);
+            this.passwordMatchingLabel.TabIndex = 34;
+            this.passwordMatchingLabel.Text = "Password matching label";
+            this.passwordMatchingLabel.Visible = false;
+            // 
             // CreateAccountForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.passwordMatchingLabel);
             this.Controls.Add(this.availabilityLabel);
             this.Controls.Add(this.repasswordLabel);
             this.Controls.Add(this.repasswordTextbox);
@@ -294,7 +296,6 @@
             this.Name = "CreateAccountForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.CreateAccountForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.exitButton)).EndInit();
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();
@@ -326,5 +327,6 @@
         public System.Windows.Forms.TextBox passwordTextbox;
         public System.Windows.Forms.Button clearUserInfoButton;
         private System.Windows.Forms.Label availabilityLabel;
+        private System.Windows.Forms.Label passwordMatchingLabel;
     }
 }

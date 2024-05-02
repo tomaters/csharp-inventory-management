@@ -16,10 +16,17 @@ namespace InventoryManagementSystem
         SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\csharp\MS Database\dbms.mdf;Integrated Security = True; Connect Timeout = 30");
         SqlCommand command = new SqlCommand();
         SqlDataReader sqlDataReader;
-        public OrdersForm()
+        public static string loggedUsername { get; private set; }
+        public OrdersForm(String username)
         {
             InitializeComponent();
+            SetLoggedUsername(username);
             LoadOrders();
+        }
+
+        public static void SetLoggedUsername(string username)
+        {
+            loggedUsername = username;
         }
         public void LoadOrders()
         {
@@ -102,11 +109,6 @@ namespace InventoryManagementSystem
         private void searchOrderTextbox_TextChanged(object sender, EventArgs e)
         {
             LoadOrders();
-        }
-
-        private void panelFooter_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
